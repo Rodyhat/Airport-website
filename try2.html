@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: blue;
+    }
+/* 
+    nav {
+        width: 100%;
+    } */
+
+    .secondary-navbar {
+        display: none;
+        /* hide secondary navbar by default */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        /* padding: 10px; */
+        /* text-align: center; */
+    }
+
+    .secondary-navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    /* .f-anchor {
+        border-top-left-radius: 15px;
+    }
+
+    .h-anchor {
+        border-top-right-radius: 15px;
+    } */
+</style>
+
+<body>
+    <!-- <nav class="navbar"> -->
+    <!-- Main Navbar Section -->
+    <nav class="navbar navbar-expand-lg py-4 ">
+        <!-- <div class="container border borer-light">
+            <div class="main-navbar">
+                <a class="navbar-brand" href="#">WEGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul
+                        class="navbar-nav m-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 me-2 justify-content-between">
+                        <li class="nav-item dropdown link-first nav-round1 f-anchor">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/flag.png" width="30px" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown link-first">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown h-anchor link-first nav-round2">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                NGN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="" class="d-flex gap-2">
+                        <button class="text-light btn rounded-5 link-first">LOGIN</button>
+                        <button class="btn text-light started rounded-5" type="submit">GET STARTED</button>
+                    </form>
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container border border-light">
+            <div class="main-navbar-navbar">
+                <a class="navbar-brand" href="#">WEGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-center gap-2  justify-content-between">
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Flight</a>
+                        </li>
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Hotels</a>
+                        </li>
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Business Travel</a>
+                        </li>
+
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Flight Blog</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul
+                            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 me-2 justify-content-between">
+                            <li class="nav-item dropdown border border-dark link-first nav-round1">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="./images/flag.png" width="30px" alt="">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown link-first border border-dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown link-first nav-round2 border border-dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    NGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form action="" class="d-flex gap-2">
+                            <button class="btn rounded-5 link-first border border-dark">LOGIN</button>
+                            <button class="btn started rounded-5 bg-success" type="submit">GET STARTED</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Secondary Navbar Section (hidden by default) -->
+        <div class="container">
+            <div class="secondary-navbar">
+                <a class="navbar-brand" href="#">WEGO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex align-items-center gap-2  justify-content-between">
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Flight</a>
+                        </li>
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Hotels</a>
+                        </li>
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Business Travel</a>
+                        </li>
+
+                        <li class="nav-item dropdown link-first nav-round1">
+                            <a href="" class="text-dark">Flight Blog</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul
+                            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 me-2 justify-content-between">
+                            <li class="nav-item dropdown border border-dark link-first nav-round1">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="./images/flag.png" width="30px" alt="">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown link-first border border-dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown link-first nav-round2 border border-dark">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    NGN
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form action="" class="d-flex gap-2">
+                            <button class="btn rounded-5 link-first border border-dark">LOGIN</button>
+                            <button class="btn started rounded-5 bg-success" type="submit">GET STARTED</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar">
+        Main Navbar Section
+    <div class="main-navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    Secondary Navbar Section (hidden by default)
+    <div class="secondary-navbar">
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    </nav>  -->
+
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis qui, harum nostrum architecto hic sunt deleniti
+    quidem ut tempore omnis? Repudiandae, veniam! Ullam dolore corrupti libero sunt illum animi sint, earum officia qui
+    odio culpa accusamus nulla itaque unde ducimus, error in consequuntur ab odit aperiam omnis beatae dolorem! Maiores,
+    sed magni? Nulla iusto maxime totam ipsum veniam minus, perspiciatis quia, voluptate neque iure cumque qui
+    exercitationem commodi adipisci quos ipsam laborum praesentium unde voluptates eum consectetur facere! Doloribus
+    quaerat doloremque possimus numquam enim optio, odio at voluptatibus nulla ut beatae commodi, totam esse corporis
+    dolor est nisi provident deleniti saepe tenetur, impedit excepturi! Nesciunt provident blanditiis voluptas incidunt
+    cumque iusto vitae labore dignissimos, minus, facere dolores harum est, accusamus tenetur. Asperiores quos illum
+    possimus reprehenderit excepturi fuga molestiae rerum. Asperiores consectetur ab temporibus dolorem fugit animi
+    doloremque aperiam dolores assumenda eligendi. Eum aut illo labore id, delectus voluptate expedita mollitia et nisi
+    rem accusantium fugit omnis nobis magnam, adipisci voluptatem doloribus dolore explicabo quia. Quas, ea? Hic modi
+    iusto velit, consectetur voluptatum reiciendis autem rerum! Placeat maiores mollitia excepturi nihil nulla similique
+    accusamus ipsum sapiente ex, aut sed unde blanditiis error doloribus nemo deleniti possimus, eos laboriosam a ullam
+    impedit. Ut quibusdam dolor aliquam accusantium facilis veritatis voluptatibus cumque quae. Tempora commodi quos
+    sequi sapiente id quidem quis animi soluta, quae ipsam pariatur illo, doloremque aut cumque vero delectus
+    repellendus totam a alias rerum officia incidunt quasi eveniet beatae. Quibusdam facilis voluptas architecto sequi
+    laborum, rerum aliquid quae est hic, porro magni beatae. Beatae omnis maiores et sit labore perferendis ea quisquam,
+    minus atque, a culpa itaque repellendus velit soluta exercitationem dolores magni maxime doloribus tempore
+    doloremque quo voluptatum explicabo quam! Cum soluta fuga repudiandae vitae dolorum est. Obcaecati suscipit repellat
+    impedit facilis reprehenderit inventore quaerat, similique possimus ab porro atque laborum illo dolores ad delectus
+    nobis doloribus. Quos, enim expedita! Sunt natus tempore dicta quae. Laborum nemo architecto consequuntur, et
+    corrupti omnis nesciunt doloribus repellendus repudiandae deserunt velit non quod nihil quisquam perferendis eos,
+    exercitationem neque dolores optio fugiat officia ipsa tempora magnam! Optio eum soluta sunt, vel id minima porro
+    rem quia laborum aspernatur, quis quae tempore officiis aperiam ipsum hic, nisi expedita veniam enim! Nulla,
+    officia. Error omnis dignissimos amet quidem dicta deserunt facilis consequuntur reiciendis. Nam cumque corporis
+    quidem eveniet repellendus nulla ullam? Nulla, unde odio vel enim delectus eum, deserunt ad dignissimos totam, ipsa
+    impedit suscipit incidunt nihil? Deserunt minus autem aliquam blanditiis, ex ab ratione facilis cumque voluptatum
+    repellendus nulla reprehenderit sit nobis, beatae ipsa voluptas esse quisquam rem eum. Ducimus, quod! Saepe dolor
+    quae minus eveniet, laboriosam mollitia dolores maiores libero repudiandae quidem veniam quam possimus in et magnam
+    corrupti? Voluptatem fuga odio sequi cumque et distinctio illum praesentium quidem, officiis illo culpa minima. Ex,
+    deleniti. Accusantium ullam aliquam aspernatur rerum reiciendis a non in soluta illum voluptate pariatur animi
+    ratione dolor molestias placeat ab illo, officia, fuga architecto nam? Nemo id, iure porro pariatur aperiam
+    quibusdam illum! Molestias eligendi explicabo voluptatum? Quisquam, praesentium explicabo eveniet eaque magni
+    delectus quidem itaque esse cupiditate nihil magnam quo officiis doloremque incidunt fugit saepe repellendus sit id
+    numquam sapiente fuga. Recusandae, quae at dolor necessitatibus ea consequatur et nobis dolores. Modi nam expedita
+    exercitationem optio! Nemo veniam, totam ducimus dicta eius, vitae quod aspernatur saepe, officiis facilis at nihil
+    pariatur ipsa expedita harum vero? Harum quo impedit distinctio minus molestiae dolores assumenda, temporibus modi
+    porro facilis. Sunt veniam at reiciendis odit. Molestias unde minus eos facere iure consequuntur provident corporis
+    nisi ad magnam ex quos rem quis in impedit quia vero quae beatae laborum, libero mollitia id? Fugit pariatur sit
+    sapiente, aut dolorem molestiae culpa eligendi cum reprehenderit inventore, a veritatis facilis doloribus
+    perspiciatis. Dolore reiciendis facilis, eaque in rem quos consequuntur saepe atque deleniti non ullam beatae fugit
+    assumenda sed quidem error laudantium sapiente alias est optio repellat voluptate explicabo, tenetur quibusdam.
+    Accusamus aliquam corrupti alias quas delectus minus rerum nesciunt quia dolorem dicta nulla praesentium sit, cum
+    nam, aperiam distinctio, aspernatur itaque quibusdam neque dolore eligendi rem dolores! Similique eligendi maxime
+    dignissimos vel veniam magni sequi dolore dolorem, illum, reprehenderit voluptatum, consequuntur commodi. Iusto
+    aliquid animi, doloribus ipsam omnis at doloremque, rerum perferendis dolores nemo distinctio fuga beatae illum?
+    Rerum veniam ex repudiandae explicabo molestiae, dignissimos voluptas optio id animi sequi esse fuga aperiam culpa
+    nesciunt nobis dolor voluptate ipsum ea soluta, accusamus repellat eligendi labore. Maxime dolorem adipisci
+    possimus. Quia sunt repellat possimus laborum asperiores explicabo reprehenderit aliquid commodi eos mollitia,
+    delectus totam quasi ea veritatis aperiam, distinctio recusandae voluptatum, fuga perferendis. Temporibus voluptas
+    mollitia animi modi maiores itaque impedit nemo sint minima vitae aliquam perspiciatis error accusantium natus, non
+    eligendi ex voluptatum quibusdam vero veniam qui reiciendis. Repellendus, nesciunt quia? Suscipit aspernatur, ad
+    magnam alias, cum error hic aut numquam veniam non ipsa reprehenderit fugit ullam nobis. Pariatur, beatae eligendi
+    exercitationem reiciendis eum atque excepturi tempore iusto enim tempora rem voluptatum veniam. Ipsam, inventore,
+    minus labore impedit voluptatum quibusdam, recusandae doloremque possimus veniam ratione nam amet error nobis quia
+    expedita unde iusto velit repellat pariatur! Rem facilis, dolorem illo consectetur libero provident labore! Soluta,
+    reiciendis quis culpa ducimus eos nobis illum repellat vel. Eum quae rem quidem quis, modi ipsa voluptatem quisquam
+    vel beatae quasi sunt sapiente aperiam illo natus obcaecati, impedit maxime quia. Ipsam ad dolor ex, hic incidunt
+    exercitationem enim iste corporis itaque fuga sapiente, voluptatum nostrum eos accusamus adipisci, quas
+    reprehenderit architecto inventore esse repellat sunt! Optio vero dicta doloremque doloribus corrupti? Natus,
+    deleniti quis eos distinctio quisquam sint architecto! Harum, sed fugit consequuntur deleniti illum necessitatibus
+    possimus. Optio odio accusamus at quasi fuga numquam similique facere, nemo fugiat ullam! Molestias ducimus aperiam
+    ipsa a sed dolores obcaecati. Minus optio nemo voluptas nobis exercitationem, reiciendis, aspernatur vitae quis
+    perferendis asperiores pariatur, quae veniam vero. Vel, recusandae nam? Facilis commodi, laudantium labore rerum
+    eius iusto, rem dicta esse enim magnam provident amet molestias aperiam sequi natus quos architecto mollitia dolores
+    ipsum. Reiciendis maiores ut facilis in, officia eum quisquam.
+
+
+    <script>
+        const secondaryNavbar = document.querySelector('.secondary-navbar');
+        const mainNavbarHeight = document.querySelector('.main-navbar').offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > mainNavbarHeight) {
+                secondaryNavbar.style.display = 'block';
+            } else {
+                secondaryNavbar.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
