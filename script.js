@@ -40,24 +40,25 @@ window.addEventListener("scroll", () => {
 // flight ways
 let oneWay = document.querySelector(".one-way");
 let oneWayLink = document.querySelector(".one-way-link");
-let roundTripLink = document.querySelector(".round-trip-link"); 
+let roundTripLink = document.querySelector(".round-trip-link");
 let oneWayDepart = document.querySelector(".one-way-depart");
 let roundWayReturn = document.querySelector(".round-way-return");
 let roundTrip = document.querySelector(".round-trip");
 
-oneWayLink.addEventListener("click", () =>{
-    oneWay.style.color = "green";
-    oneWay.style.backgroundColor = "#E7FDDC";
-    oneWay.style.borderRadius = "18px";
-    oneWayDepart.style.display = "block";
-    roundWayReturn.style.display = "none";
-    roundTrip.className = oneWay.className;
+oneWayLink.addEventListener("click", () => {
+  oneWay.classList.replace("one-way", "round-trip");
+  roundTrip.classList.replace("round-trip", "one-way");
+  oneWayDepart.style.display = "block";
+  roundWayReturn.style.display = "none";
+  // oneWay.style.color = "green";
+  // oneWay.style.backgroundColor = "#E7FDDC";
+  // oneWay.style.borderRadius = "18px";
+  // roundTrip.className = oneWay.className;
 });
 
-roundTripLink.addEventListener("click", () =>{
-    roundWayReturn.style.display = "block";
-    oneWayDepart.style.display = "none";
-    
+roundTripLink.addEventListener("click", () => {
+  roundWayReturn.style.display = "block";
+  oneWayDepart.style.display = "none";
+  roundTripLink.classList.replace("one-way", "round-trip");
+  oneWayLink.classList.replace("round-trip", "one-way");
 });
-
-

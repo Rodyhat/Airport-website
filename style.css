@@ -114,8 +114,12 @@ body {
   border-top-right-radius: 15px;
 }
 
+p {
+  margin: 0;
+}
+
 .flight-trip {
-  height: 45vh;
+  /* height: 40vh; */
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -127,12 +131,20 @@ body {
   border-radius: 18px;
 }
 
-.one-way-depart{
+.one-way-depart {
+  display: none;
+}
+
+/* .multi-city-depart {
+  display: none;
+} */
+
+.round-way-return{
   display: none;
 }
 
 .round-trip {
-  background-color: #E7FDDC;
+  background-color: #e7fddc;
   color: green;
   padding: 9px;
   border-radius: 18px;
@@ -143,7 +155,7 @@ body {
   border-radius: 18px;
 }
 
-.a-one{
+.a-one {
   color: black;
 }
 
@@ -154,7 +166,13 @@ body {
 .arrow img {
   position: absolute;
   left: 255px;
-  top: 17px;
+  top: 12px;
+}
+
+.arrow2 img {
+  position: absolute;
+  left: 345px;
+  top: 12px;
 }
 
 .from,
@@ -223,16 +241,16 @@ a {
     display: flex;
     flex-direction: column;
   }
- .arrow img{
-  display: none;
- }
+  .arrow img {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
   .en {
     display: none;
   }
-  .arrow img{
+  .arrow img {
     display: none;
-   }
+  }
 }
