@@ -1,9 +1,9 @@
-// hero imgae transition
+// hero imgae transition 7583
 const backgroundContainer = document.querySelector(".hero-image");
 const images = [
-  "./images/hero-img7.jpg",
-  "./images/hero-img8.jpg",
-  "./images/hero-img6.jpg",
+  "./images/hero-img2.jpg",
+  "./images/hero-img3.jpg",
+  "./images/hero-img1.jpg",
 ];
 
 let currentIndex = 0;
@@ -37,28 +37,110 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// flight ways
+// flight way
+
+function resetActiveState() {
+  oneWay.classList.remove("active2");
+  multiCity.classList.remove("active2");
+  roundTrip.classList.remove("active2");
+
+  // oneWay.classList.remove("one-way");
+}
+
 let oneWay = document.querySelector(".one-way");
+let roundTrip = document.querySelector(".round-trip");
+let multiCity = document.querySelector(".multi-city");
+
 let oneWayLink = document.querySelector(".one-way-link");
 let roundTripLink = document.querySelector(".round-trip-link");
+let multiCityLink = document.querySelector(".multi-city-link");
+
 let oneWayDepart = document.querySelector(".one-way-depart");
 let roundWayReturn = document.querySelector(".round-way-return");
-let roundTrip = document.querySelector(".round-trip");
+let multiCityDepart = document.querySelector(".multi-city-depart");
 
+let addFlight = document.querySelector(".add-flight");
+
+// one way
 oneWayLink.addEventListener("click", () => {
-  oneWay.classList.replace("one-way", "round-trip");
-  roundTrip.classList.replace("round-trip", "one-way");
+  resetActiveState();
+  oneWay.classList.add("active2");
+  roundTrip.classList.remove("round-trip");
+  roundTrip.classList.add("one-way");
+
   oneWayDepart.style.display = "block";
   roundWayReturn.style.display = "none";
-  // oneWay.style.color = "green";
-  // oneWay.style.backgroundColor = "#E7FDDC";
-  // oneWay.style.borderRadius = "18px";
-  // roundTrip.className = oneWay.className;
+  multiCityDepart.style.display = "none";
+  addFlight.style.display = "none";
 });
 
+// round trip
 roundTripLink.addEventListener("click", () => {
-  roundWayReturn.style.display = "block";
+  roundTrip.classList.add("active2");
+  oneWay.classList.remove("active2");
+  multiCity.classList.remove("active2");
+
   oneWayDepart.style.display = "none";
-  roundTripLink.classList.replace("one-way", "round-trip");
-  oneWayLink.classList.replace("round-trip", "one-way");
+  roundWayReturn.style.display = "block";
+  multiCityDepart.style.display = "none";
+  addFlight.style.display = "none";
 });
+
+// multi city
+multiCityLink.addEventListener("click", () => {
+  multiCity.classList.add("active2");
+  roundTrip.classList.remove("active2");
+  oneWay.classList.remove("active2");
+
+  multiCityDepart.style.display = "block";
+  addFlight.style.display = "block";
+  roundWayReturn.style.display = "none";
+  oneWayDepart.style.display = "none";
+});
+
+// flight ways
+// let oneWay = document.querySelector(".one-way");
+// let roundTrip = document.querySelector(".round-trip");
+// let multiCity = document.querySelector(".multi-city");
+
+// let oneWayLink = document.querySelector(".one-way-link");
+// let roundTripLink = document.querySelector(".round-trip-link");
+// let multiCityLink = document.querySelector(".multi-city-link");
+
+// let oneWayDepart = document.querySelector(".one-way-depart");
+// let roundWayReturn = document.querySelector(".round-way-return");
+// let multiCityDepart = document.querySelector(".multi-city-depart");
+
+// addFlight = document.querySelector(".add-flight");
+
+// // one way
+// oneWayLink.addEventListener("click", () => {
+//   oneWay.classList.replace("one-way", "round-trip");
+//   roundTrip.classList.replace("round-trip", "one-way");
+//   multiCity.classList.replace("multi-city", "multi-city");
+//   oneWayDepart.style.display = "block";
+//   addFlight.style.display = "none";
+//   roundWayReturn.style.display = "none";
+//   multiCityDepart.style.display = "none";
+
+// });
+
+// // round trip
+// roundTripLink.addEventListener("click", () => {
+//   roundTrip.classList.replace("one-way", "round-trip");
+//   oneWay.classList.replace("round-trip", "one-way");
+//   multiCity.classList.replace("one-way", "multi-city");
+//   roundWayReturn.style.display = "block";
+//   oneWayDepart.style.display = "none";
+// });
+
+// // multi city
+// multiCityLink.addEventListener("click", () => {
+//   // multiCity.classList.replace("multi-city", "round-trip");
+//   roundTrip.classList.replace("round-trip", "one-way");
+//   oneWay.classList.replace("one-way", "multi-city");
+//   multiCityDepart.style.display = "block";
+//   addFlight.style.display = "block";
+//   roundWayReturn.style.display = "none";
+//   oneWayDepart.style.display = "none";
+// });

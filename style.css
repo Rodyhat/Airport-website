@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", serif;
   font-weight: 400;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* navbar */
@@ -19,6 +19,9 @@ body {
   /* add a smooth transition effect */
 }
 
+a {
+  text-decoration: none;
+}
 .navbar.fixed {
   position: fixed;
   top: 0;
@@ -50,10 +53,10 @@ body {
 
 .link-first {
   background-color: rgba(24, 3, 3, 0.285);
+  font-size: 15px;
 }
 .link-first2 {
   background-color: transparent;
-  border: 1px solid #00000034;
 }
 
 .nav-round1 {
@@ -66,9 +69,11 @@ body {
   border-bottom-right-radius: 30px;
 }
 
+/* hero section */
+
 .hero {
   background-color: white;
-  height: 53vh;
+  height: 58vh;
 }
 
 .hero-image {
@@ -76,7 +81,7 @@ body {
       rgba(0, 0, 255, 0.064),
       rgba(255, 255, 255, 0.303)
     ),
-    url(./images/hero-img6.jpg);
+    url(./images/hero-img1.jpg);
   width: 100%;
   height: 80vh;
   border-bottom-left-radius: 12%;
@@ -102,6 +107,8 @@ body {
   background-color: white;
 }
 
+/* second section */
+
 .flight-link a {
   text-decoration: none;
 }
@@ -119,35 +126,13 @@ p {
 }
 
 .flight-trip {
-  /* height: 40vh; */
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.one-way {
-  background-color: rgba(193, 180, 180, 0.27);
-  padding: 9px;
-  border-radius: 18px;
-}
-
-.one-way-depart {
-  display: none;
-}
-
-/* .multi-city-depart {
-  display: none;
-} */
-
-.round-way-return{
-  display: none;
-}
-
-.round-trip {
-  background-color: #e7fddc;
-  color: green;
-  padding: 9px;
-  border-radius: 18px;
+.a-one {
+  color: black;
 }
 
 .ways {
@@ -155,12 +140,101 @@ p {
   border-radius: 18px;
 }
 
-.a-one {
-  color: black;
+.one-way,
+.multi-city {
+  background-color: rgba(193, 180, 180, 0.27);
+  padding: 9px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.round-trip {
+  background-color: #e7fddc;
+  color: green;
+  padding: 9px;
+  border-radius: 18px;
+  cursor: pointer;
 }
 
-.going {
+.one-way-depart {
+  display: none;
+}
+.label {
+  font-size: 13px;
+}
+
+.from-text {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #00000023;
+  border-radius: 10px;
+  padding: 6px 10px 49px 15px;
+}
+
+.to-text {
+  height: 57px;
+  display: flex;
+  padding: 15px;
+  /* flex-direction: column; */
+  border: 1px solid #00000023;
+  border-radius: 10px;
+}
+.to-input {
+  font-size: 13px;
+  padding: 15px 10px 46px;
+}
+.from-text:hover,
+.to-text:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.229);
+}
+
+.from-value {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.from {
   position: relative;
+}
+
+.angle-time {
+  position: absolute;
+  right: -15px;
+}
+.multi-city-depart {
+  display: none;
+}
+
+.add-flight {
+  display: none;
+}
+
+.active2 {
+  background-color: #e7fddc;
+  color: green;
+  cursor: pointer;
+}
+
+.from-input {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  /* position: absolute; */
+  z-index: 10;
+  display: none;
+}
+
+.from-input input {
+  outline: 1px solid green;
+  width: 100%;
+}
+
+.fa-circle-xmark {
+  position: absolute;
+  color: grey;
+  right: 10px;
+  top: 5px;
 }
 
 .arrow img {
@@ -175,29 +249,8 @@ p {
   top: 12px;
 }
 
-.from,
-.to {
-  border: 1px solid #00000023;
-  padding-left: 15px;
-}
-
-.from-input {
+.going {
   position: relative;
-  background-color: white;
-  border-radius: 12px;
-  /* position: absolute; */
-  z-index: 10;
-}
-.from-input input {
-  outline: 1px solid green;
-  width: 100%;
-}
-
-.fa-circle-xmark {
-  position: absolute;
-  color: grey;
-  right: 10px;
-  top: 5px;
 }
 
 #flight-checkbox {
@@ -213,11 +266,9 @@ p {
   background-color: #44b50c;
 }
 
-a {
-  text-decoration: none;
-  /* color: black; */
+.angle {
+  color: #188920;
 }
-
 /* button */
 .btn-green:hover {
   background-color: green !important;
@@ -229,21 +280,48 @@ a {
   background-color: rgba(128, 128, 128, 0.15);
 }
 
-@media (max-width: 767px) {
-  .hero-change {
-    margin: 40px 10px;
-  }
+.second-nav-link {
+  display: flex;
+}
 
-  .en {
-    display: none;
-  }
-  .log-start {
-    display: flex;
-    flex-direction: column;
-  }
-  .arrow img {
-    display: none;
-  }
+/* third section */
+.slide-hidden {
+  display: none;
+}
+
+.slide-show img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+}
+
+.third {
+  border: 1px solid red;
+}
+/* forth section */
+.forth-img {
+  width: 100px;
+  height: 100px;
+}
+
+.forth-sec h6 {
+  font-weight: bolder;
+}
+
+.book-flight {
+  box-sizing: 5px 5px 10px 20px black;
+  /* border: 10px solid #000; */
+}
+
+/* cancel flight */
+.cancel{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #767676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
@@ -252,5 +330,52 @@ a {
   }
   .arrow img {
     display: none;
+  }
+  .second-nav-link {
+    display: none;
+  }
+  .second-nav {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .en {
+    display: none;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .arrow img {
+    display: none;
+  }
+
+  .depart h6,
+  .from h6 {
+    font-size: 10px;
+  }
+
+  .navbar-more-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-hidden {
+    display: block;
+  }
+  .slide-show {
+    display: none;
+  }
+  .third-sec-img {
+    width: 100%;
+  }
+
+  .hero-change h1 {
+    font-size: 37px;
   }
 }
