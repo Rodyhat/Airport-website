@@ -207,15 +207,14 @@
                 </div>
                 <!-- one way -->
                 <div class="one-way-depart">
-                    <div>
-                        <div class="row form">
-                            <div class="going d-flex gap-2 col-lg-4 col-md-4 col-6">
-                                <div class="from-text w-100">
-                                    <label for="" class="label">From</label>
-                                    <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                        id="">
-                                </div>
-                                <div class="from-input w-100 px-5 py-3">
+                    <div class="row form">
+                        <div class="going d-flex gap-2 col-lg-4 col-md-4 col-12">
+                            <!-- <div class="going-from"> -->
+                            <div class="from w-100">
+                                <p class="">From</p>
+                                <h6 class="mt-0">Lagos,Nigeria (LOS)</h6>
+                            </div>
+                            <!-- <div class="from-input w-100 px-5 py-3">
                                     <div class="lag-input">
                                         <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
                                         <i class="fa-solid fa-circle-xmark"></i>
@@ -247,81 +246,89 @@
                                             <p>Yola</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="arrow2">
+                                <img src="./images/arrow-swap.png" width="32px" alt="">
+                            </div> -->
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="to h-100  d-flex align-items-center">
+                                <p class="ps-3 m-0">To</p>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-6">
-                                <div class=" to-text to-div">
-                                    <input type="text" value="To" name="" class="from-value " id="">
+                        </div>
+                        <div class="return d-flex col-lg-4 col-md-4 col-12">
+                            <div class="from w-100 d-flex align-items-center">
+                                <div class="depart w-100">
+                                    <p>Depart</p>
+                                    <h6 class="">Fri, 11 oct 2024</h6>
                                 </div>
-                            </div>
-                            <div class="return d-flex col-lg-4 col-md-4 col-12">
-                                <div class="from w-100 d-flex align-items-center">
-                                    <div class="from-text w-100">
-                                        <label for="" class="label">Depart</label>
-                                        <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
-                                            id="">
-                                    </div>
-                                    <div class="angle-time">
-                                        <a href="" class="d-flex pe-4 gap-2">
-                                            <i class="fa-solid fa-angle-left angle"></i>
-                                            <i class="fa-solid fa-angle-right angle"></i>
-                                        </a>
-                                    </div>
+                                <div class="angle-time">
+                                    <a href="" class="d-flex pe-4 gap-2">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-5 col-md-5 col-12">
-                            <input type="checkbox" name="" id="flight-checkbox">
-                            <label for="" class="direct-size">Direct flight only</label>
+                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                            <div class="d-flight">
+                                <input type="checkbox" name="" id="flight-checkbox">
+                                <label for="" class="direct-size">Direct flight only</label>
+                            </div>
+                            <div class="adult-economy d-flex gap-5">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        1 Adult
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Economy
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        2 Payment Types
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="adult-economy d-flex col-lg-7 col-md-7 gap-5 col-12">
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    1 Adult
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Economy
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    2 Payment Types
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <button class="btn text-light px-5 fw-bold py-2 started rounded-5 btn-green"
-                                type="submit">Search</button>
-                        </div>
+                        <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
+                            type="submit">
+                            Search
+                        </button>
                     </div>
                 </div>
                 <!-- round way -->
                 <div class="round-way-return">
                     <div class="row form">
-                        <div class="going d-flex gap-2 col-lg-6">
-                            <div class="from-text">
-                                <label for="">From</label>
-                                <input type="text" value="Kaduna, Nigeria (KAD)" name="" class="from-value" id="">
+                        <div class="going d-flex gap-2 col-lg-6 col-md-6 col-12">
+                            <!-- <div class="going-from"> -->
+                            <div class="from w-50">
+                                <p class="">From</p>
+                                <h6 class="mt-0">Lagos,Nigeria (LOS)</h6>
                             </div>
                             <!--  from pop up -->
                             <div class="from-input w-100 px-5 py-3">
@@ -357,197 +364,213 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="to-text d-flex justify-content-center">
-                                <input type="text" value="To" name="" class="from-value" id="">
+                            <div class="to w-50 d-flex align-items-center">
+                                <p class="ps-3">To</p>
                             </div>
                         </div>
-                        <div class="return  d-flex col-lg-6 gap-2">
-                            <div class="from  d-flex align-items-center">
-                                <div class="from-text">
-                                    <label for="">Depart</label>
-                                    <input type="text" value="Fri,11 oct 2024" class="from-value" name="" id="">
+                        <div class="return d-flex col-lg-6 col-md-6 col-12">
+                            <div class="from w-50 d-flex align-items-center">
+                                <div class="depart w-75">
+                                    <p>Depart</p>
+                                    <h6 class="">Fri, 11 oct 2024</h6>
                                 </div>
                                 <div class="angle-time">
-                                    <a href="" class="d-flex pe-4 gap-2">
+                                    <a href="">
                                         <i class="fa-solid fa-angle-left"></i>
                                         <i class="fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
-                            <div class="to-text d-flex justify-content-center">
-                                <input type="text" value="Return" name="" class="from-value" id="">
+                            <div class="to w-50 d-flex align-items-center">
+                                <p>Return</p>
                             </div>
                         </div>
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-5 col-md-5 col-12">
-                            <input type="checkbox" name="" id="flight-checkbox">
-                            <label for="" class="direct-size">Direct flight only</label>
+                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                            <div class="d-flight">
+                                <input type="checkbox" name="" id="flight-checkbox">
+                                <label for="" class="direct-size">Direct flight only</label>
+                            </div>
+                            <div class="adult-economy d-flex gap-5">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        1 Adult
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Economy
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        2 Payment Types
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="adult-economy d-flex col-lg-7 col-md-7 gap-5 col-12">
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    1 Adult
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Economy
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    2 Payment Types
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <button class="btn text-light px-5 fw-bold py-2 started rounded-5 btn-green"
-                                type="submit">Search</button>
-                        </div>
+                        <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
+                            type="submit">
+                            Search
+                        </button>
                     </div>
                 </div>
                 <!-- multi-city -->
-                <div class="multi-city-depart">
-                    <div class="cities-multi d-flex flex-column gap-3">
-                        <!-- one -->
-                        <div class="multi-one d-flex flex-column">
-                            <div class="row form">
-                                <div class="going d-flex gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="from-text w-100">
-                                        <label for="" class="label">From</label>
-                                        <input type="text" value="Kaduna,Nigeria (KAD)" name=""
-                                            class="from-value fw-bold" id="">
+                <div class="multi-city-depart d-grid gap-3">
+                    <!-- one -->
+                    <div class="multi-one">
+                        <div class="row form">
+                            <div class="going d-flex gap-2 col-lg-4 col-md-4 col-12">
+                                <!-- <div class="going-from"> -->
+                                <div class="from w-100">
+                                    <p class="">From</p>
+                                    <h6 class="mt-0">Lagos,Nigeria (LOS)</h6>
+                                </div>
+                                <!-- <div class="from-input w-100 px-5 py-3">
+                                    <div class="lag-input">
+                                        <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
+                                        <i class="fa-solid fa-circle-xmark"></i>
                                     </div>
-                                    <div class="from-input w-100 px-5 py-3">
-                                        <div class="lag-input">
-                                            <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
-                                            <i class="fa-solid fa-circle-xmark"></i>
+                                    <h6>Popular cities</h6>
+                                    <div class="from-location d-flex">
+                                        <div class="locat-1">
+                                            <p>Lagos</p>
+                                            <p>Enugu</p>
+                                            <p>Maiduguri</p>
+                                            <p>Ibadan</p>
                                         </div>
-                                        <h6>Popular cities</h6>
-                                        <div class="from-location d-flex">
-                                            <div class="locat-1">
-                                                <p>Lagos</p>
-                                                <p>Enugu</p>
-                                                <p>Maiduguri</p>
-                                                <p>Ibadan</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Abuja</p>
-                                                <p>Benin City</p>
-                                                <p>Owerri</p>
-                                                <p>Uyo</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Kano</p>
-                                                <p>Asaba</p>
-                                                <p>Kaduna</p>
-                                                <p>Jos</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Port-Harcourt</p>
-                                                <p>Ilorin</p>
-                                                <p>Sokoto</p>
-                                                <p>Yola</p>
-                                            </div>
+                                        <div class="locat-1">
+                                            <p>Abuja</p>
+                                            <p>Benin City</p>
+                                            <p>Owerri</p>
+                                            <p>Uyo</p>
                                         </div>
+                                        <div class="locat-1">
+                                            <p>Kano</p>
+                                            <p>Asaba</p>
+                                            <p>Kaduna</p>
+                                            <p>Jos</p>
+                                        </div>
+                                        <div class="locat-1">
+                                            <p>Port-Harcourt</p>
+                                            <p>Ilorin</p>
+                                            <p>Sokoto</p>
+                                            <p>Yola</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="arrow2">
+                                <img src="./images/arrow-swap.png" width="32px" alt="">
+                            </div> -->
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="to h-100  d-flex align-items-center">
+                                    <p class="ps-3 m-0">To</p>
+                                </div>
+                            </div>
+                            <div class="return d-flex col-lg-4 col-md-4 col-12">
+                                <div class="from w-100 d-flex align-items-center">
+                                    <div class="depart w-100">
+                                        <p>Depart</p>
+                                        <h6 class="">Fri, 11 oct 2024</h6>
+                                    </div>
+                                    <div class="angle-time">
+                                        <a href="" class="d-flex pe-4 gap-2">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-4">
-                                    <div class=" to-text to-div">
-                                        <input type="text" value="To" name="" class="from-value " id="">
-                                    </div>
-                                </div>
-                                <div class="return d-flex col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center">
-                                        <div class="from-text w-100">
-                                            <label for="" class="label">Depart</label>
-                                            <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold"
-                                                name="" id="">
-                                        </div>
-                                        <div class="angle-time">
-                                            <a href="" class="d-flex pe-4 gap-2">
-                                                <i class="fa-solid fa-angle-left angle"></i>
-                                                <i class="fa-solid fa-angle-right angle"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="cancel">
+                                    <i class="fa-solid fa-circle-xmark"></i>
                                 </div>
                             </div>
                         </div>
-                        <!-- two -->
-                        <div class="multi-one d-flex flex-column">
-                            <div class="row form">
-                                <div class="going d-flex gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="w-100 to-text to-div">
-                                        <input type="text" value="From" name="" class="from-value " id="">
-                                    </div>
-                                    <div class="from-input w-100 px-5 py-3">
-                                        <div class="lag-input">
-                                            <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6>Popular cities</h6>
-                                        <div class="from-location d-flex">
-                                            <div class="locat-1">
-                                                <p>Lagos</p>
-                                                <p>Enugu</p>
-                                                <p>Maiduguri</p>
-                                                <p>Ibadan</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Abuja</p>
-                                                <p>Benin City</p>
-                                                <p>Owerri</p>
-                                                <p>Uyo</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Kano</p>
-                                                <p>Asaba</p>
-                                                <p>Kaduna</p>
-                                                <p>Jos</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Port-Harcourt</p>
-                                                <p>Ilorin</p>
-                                                <p>Sokoto</p>
-                                                <p>Yola</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <!-- two -->
+                    <div class="multi-two">
+                        <div class="row form">
+                            <div class="going d-flex gap-2 col-lg-4 col-md-4 col-12">
+                                <!-- <div class="going-from"> -->
+                                <div class="from w-100 p-3 d-flex align-items-center">
+                                    <p class="">From</p>
+
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-4">
-                                    <div class=" to-text to-div">
-                                        <input type="text" value="To" name="" class="from-value " id="">
+                                <!-- <div class="from-input w-100 px-5 py-3">
+                                    <div class="lag-input">
+                                        <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
+                                        <i class="fa-solid fa-circle-xmark"></i>
                                     </div>
+                                    <h6>Popular cities</h6>
+                                    <div class="from-location d-flex">
+                                        <div class="locat-1">
+                                            <p>Lagos</p>
+                                            <p>Enugu</p>
+                                            <p>Maiduguri</p>
+                                            <p>Ibadan</p>
+                                        </div>
+                                        <div class="locat-1">
+                                            <p>Abuja</p>
+                                            <p>Benin City</p>
+                                            <p>Owerri</p>
+                                            <p>Uyo</p>
+                                        </div>
+                                        <div class="locat-1">
+                                            <p>Kano</p>
+                                            <p>Asaba</p>
+                                            <p>Kaduna</p>
+                                            <p>Jos</p>
+                                        </div>
+                                        <div class="locat-1">
+                                            <p>Port-Harcourt</p>
+                                            <p>Ilorin</p>
+                                            <p>Sokoto</p>
+                                            <p>Yola</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- </div> -->
+                                <!-- <div class="arrow2">
+                                <img src="./images/arrow-swap.png" width="32px" alt="">
+                            </div> -->
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="to d-flex align-items-center p-3">
+                                    <p class="ps-3 m-0">To</p>
                                 </div>
-                                <div class="return d-flex col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center">
-                                        <div class="w-100 to-text to-div">
-                                            <input type="text" value="Depart" name="" class="from-value " id="">
-                                        </div>
-                                        <div class="angle-time">
-                                            <a href="" class="d-flex pe-4 gap-2">
-                                                <i class="fa-solid fa-angle-left angle"></i>
-                                                <i class="fa-solid fa-angle-right angle"></i>
-                                            </a>
-                                        </div>
+                            </div>
+                            <div class="return d-flex col-lg-4 col-md-4 col-12">
+                                <div class="from w-100 p-3 d-flex align-items-center">
+                                    <div class="depart w-100">
+                                        <p>Depart</p>
+
+                                    </div>
+                                    <div class="angle-time">
+                                        <a href="" class="d-flex pe-2 gap-2">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -593,22 +616,18 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-4">
-                                    <div class=" to-text to-div">
-                                        <input type="text" value="To" name="" class="from-value " id="">
+                            </div>
+                            <div class="return d-flex col-lg-4 col-md-4 col-12">
+                                <div class="from w-100 p-3 d-flex align-items-center">
+                                    <div class="depart w-100">
+                                        <p>Depart</p>
+
                                     </div>
-                                </div>
-                                <div class="return d-flex col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center">
-                                        <div class="w-100 to-text to-div">
-                                            <input type="text" value="Depart" name="" class="from-value " id="">
-                                        </div>
-                                        <div class="angle-time">
-                                            <a href="" class="d-flex pe-4 gap-2">
-                                                <i class="fa-solid fa-angle-left angle"></i>
-                                                <i class="fa-solid fa-angle-right angle"></i>
-                                            </a>
-                                        </div>
+                                    <div class="angle-time">
+                                        <a href="" class="d-flex pe-2 gap-2">
+                                            <i class="fa-solid fa-angle-left"></i>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
