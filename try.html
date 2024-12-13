@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Selector</title>
+    <style>
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .popup div {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .popup div:hover {
+            background-color: #f0f0f0;
+        }
+
+        #cityPopup {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .con {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .from-text {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #00000023;
+            border-radius: 10px;
+            /* padding: 6px 10px 49px 15px; */
+        }
+       .from-text input{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="cityInput">From:</label>
+    <input type="text" id="cityInput" placeholder=""  value="Kaduna,Nigeria (KAD)">
+    <div class="popup" id="cityPopup">
+        <div class="from-text w-100">
+            <label for="" class="label">From</label>
+            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold" id="">
+        </div> <i class="fa-solid fa-circle-xmark"></i>
+        <div class="con">
+            <div class="country">Lagos</div>
+            <div class="country">Abuja</div>
+            <div class="country">Kano</div>
+            <div class="country">Port Harcourt</div>
+            <div class="country">Enugu</div>
+            <div class="country">Benin City</div>
+            <div class="country">Maiduguri</div>
+            <div class="country">Ibadan</div>
+            <div class="country">Kaduna</div>
+            <div class="country">Uyo</div>
+            <div class="country">Owerri</div>
+            <div class="country">Asaba</div>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById('cityInput');
+        const popup = document.getElementById('cityPopup');
+
+        // Show popup when input is clicked
+        input.addEventListener('click', () => {
+            const rect = input.getBoundingClientRect();
+            popup.style.top = `${rect.bottom + window.scrollY}px`;
+            popup.style.left = `${rect.left + window.scrollX}px`;
+            popup.style.display = 'grid';
+            popup.style.top = 0;
+            popup.style.left = 0;
+        });
+
+        // Hide popup when clicking outside
+        document.addEventListener('click', (e) => {
+            if (e.target !== input && !popup.contains(e.target)) {
+                popup.style.display = 'none';
+            }
+        });
+
+        // Add city name to input when a city is clicked
+        popup.addEventListener('click', (e) => {
+            if (e.target.tagName === 'DIV') {
+                input.value = e.target.textContent;
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

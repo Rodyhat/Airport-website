@@ -144,3 +144,47 @@ multiCityLink.addEventListener("click", () => {
 //   roundWayReturn.style.display = "none";
 //   oneWayDepart.style.display = "none";
 // });
+
+// pop up country
+// 
+// Select all city inputs and popups
+const inputs = document.querySelectorAll(".cityInput");
+const popups = document.querySelectorAll(".cityPopup");
+
+// Function to show the correct popup
+function showPopup(input, popup) {
+  const rect = input.getBoundingClientRect();
+  popup.style.top = `${rect.bottom + window.scrollY}px`;
+  popup.style.left = `${rect.left + window.scrollX}px`;
+  popup.style.display = "grid";
+}
+
+// Event listener for each input
+inputs.forEach((input) => {
+  input.addEventListener("click", () => {
+    // Find the corresponding popup
+    const popup = input.closest("div").querySelector(".city-popup");
+    showPopup(input, popup);
+  });
+});
+
+// Hide popups when clicking outside
+document.addEventListener("click", (e) => {
+  popups.forEach((popup) => {
+    const input = popup.previousElementSibling.querySelector(".city-input");
+    if (e.target !== input && !popup.contains(e.target)) {
+      popup.style.display = "none";
+    }
+  });
+});
+
+// Add city name to input when a city is clicked
+popups.forEach((popup) => {
+  popup.addEventListener("click", (e) => {
+    if (e.target.classList.contains("country")) {
+      const input = popup.closest("div").querySelector(".city-input");
+      input.value = e.target.textContent;
+      popup.style.display = "none";
+    }
+  });
+});
