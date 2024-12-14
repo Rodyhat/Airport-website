@@ -27,20 +27,15 @@
 <body>
 
     <div class="all">
+        <!-- hero section -->
         <div class="hero">
             <!-- navbar -->
             <div class="hero-image d-flex flex-column">
                 <div class="nav-container">
                     <!-- first navbar -->
                     <nav class="navbar navbar-expand-lg navbar1 show">
-                        <div class="container py-2">
-                            <a class="navbar-brand" href="#">WEGO</a>
-                            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button> -->
-                            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                        <div class="nav-all py-2">
+                            <a class="navbar-brand text-light" href="#">WEGO</a>
                             <ul
                                 class="navbar-nav no-collapse-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 me-2 justify-content-between">
                                 <li class="nav-item dropdown link-first nav-round1">
@@ -94,11 +89,14 @@
                             </form>
                         </div>
                     </nav>
-                    <nav class=" navbar navbar-expand-lg navbar2 hidden ">
-                        <div class="container py-2">
+                    <!-- second navbar -->
+                    <nav class=" navbar navbar-expand-lg navbar2 hidden fixed-top ">
+                        <div class="nav-all py-2">
                             <div class="navbar-more-links w-100 d-flex justify-content-between">
                                 <!-- Additional links here -->
-
+                                <a class="navbar-brand " href="#">WEGO</a>
+                                <ul
+                                    class="navbar-nav second-nav m-auto fw-bold mb-2 mb-lg-0 d-flex align-items-center gap-2  justify-content-between">
                                     <li class="nav-item flight-deco">
                                         <a class="nav-link active text-success" aria-current="page" href="#">Flights</a>
                                     </li>
@@ -177,11 +175,11 @@
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="book-flight d-flex flex-column">
+    <!-- second section -->
+    <div class=" second">
+        <div class="book-flight  d-flex flex-column">
             <div class="flight-link d-flex">
-                <a href="" style="" class="text-dark bg-light px-2  f-anchor">
+                <a href="" class="text-dark bg-light px-2  f-anchor">
                     <div class="flight d-flex justify-content-center pt-3 gap-1">
                         <img src="./images/aero-img1.png" width="25px" height="25px" alt="">
                         <p class="fs-6">Flights</p>
@@ -286,46 +284,46 @@
                         </div>
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-5 col-md-5 col-12">
-                            <input type="checkbox" name="" id="flight-checkbox">
-                            <label for="" class="direct-size">Direct flight only</label>
-                        </div>
-                        <div class="adult-economy d-flex col-lg-7 col-md-7 gap-5 col-12">
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    1 Adult
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                            <div class="d-flight">
+                                <input type="checkbox" name="" id="flight-checkbox">
+                                <label for="flight-checkbox" class="direct-size">Direct flight only</label>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Economy
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <div class="adult-economy d-flex gap-5">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        1 Adult
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Economy
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        2 Payment Types
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    2 Payment Types
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <button class="btn text-light px-5 fw-bold py-2 started rounded-5 btn-green"
-                                type="submit">Search</button>
                         </div>
                         <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
                             type="submit">
@@ -342,42 +340,39 @@
                                 <input type="text" value="Kaduna, Nigeria (KAD)" name="" class="from-value fw-bold "
                                     id="text">
                             </div>
-                            <!-- <div class="from-input w-100 px-5 py-3">
-                                        <div class="lag-input">
-                                            <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6>Popular cities</h6>
-                                        <div class="from-location d-flex">
-                                            <div class="locat-1">
-                                                <p>Lagos</p>
-                                                <p>Enugu</p>
-                                                <p>Maiduguri</p>
-                                                <p>Ibadan</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Abuja</p>
-                                                <p>Benin City</p>
-                                                <p>Owerri</p>
-                                                <p>Uyo</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Kano</p>
-                                                <p>Asaba</p>
-                                                <p>Kaduna</p>
-                                                <p>Jos</p>
-                                            </div>
-                                            <div class="locat-1">
-                                                <p>Port-Harcourt</p>
-                                                <p>Ilorin</p>
-                                                <p>Sokoto</p>
-                                                <p>Yola</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                            <!-- </div> -->
-                            <div class="arrow">
-                                <img src="./images/arrow-swap.png" width="32px" alt="">
+                            <!--  from pop up -->
+                            <div class="from-input px-5 py-3">
+                                <div class="lag-input">
+                                    <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <h6>Popular cities</h6>
+                                <div class="from-location d-flex">
+                                    <div class="locat-1">
+                                        <p>Lagos</p>
+                                        <p>Enugu</p>
+                                        <p>Maiduguri</p>
+                                        <p>Ibadan</p>
+                                    </div>
+                                    <div class="locat-1">
+                                        <p>Abuja</p>
+                                        <p>Benin City</p>
+                                        <p>Owerri</p>
+                                        <p>Uyo</p>
+                                    </div>
+                                    <div class="locat-1">
+                                        <p>Kano</p>
+                                        <p>Asaba</p>
+                                        <p>Kaduna</p>
+                                        <p>Jos</p>
+                                    </div>
+                                    <div class="locat-1">
+                                        <p>Port-Harcourt</p>
+                                        <p>Ilorin</p>
+                                        <p>Sokoto</p>
+                                        <p>Yola</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="to-text d-flex">
                                 <input type="text" value="To" name="" class="from-value" id="">
@@ -428,46 +423,47 @@
                         </div>
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-5 col-md-5 col-12">
-                            <input type="checkbox" name="" id="flight-checkbox">
-                            <label for="" class="direct-size">Direct flight only</label>
-                        </div>
-                        <div class="adult-economy d-flex col-lg-7 col-md-7 gap-5 col-12">
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    1 Adult
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                            <div class="d-flight">
+                                <input type="checkbox" name="" id="flight-checkbox">
+                                <label for="flight-checkbox" class="direct-size">Direct flight only</label>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Economy
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <div class="adult-economy d-flex gap-5">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        1 Adult
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Economy
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        2 Payment Types
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+
                             </div>
-                            <div class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    2 Payment Types
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <button class="btn text-light px-5 fw-bold py-2 started rounded-5 btn-green"
-                                type="submit">Search</button>
                         </div>
                         <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
                             type="submit">
@@ -764,6 +760,16 @@
                         <img src="./images/logo7.jpg" class="d-block third-sec-img" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev btn-dar " type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon w-25 h-25 " aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next btn-dark slide-hidden" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon w-25 h-25" aria-hidden="true"></span>
+                    <span class="visually-hidden text-dark">Next</span>
+                </button>
             </div>
         </div>
     </div>
