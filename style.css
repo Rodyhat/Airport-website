@@ -211,8 +211,19 @@ p {
 .to {
   border: 1px solid #00000023;
   padding-left: 15px;
+  border-radius: 10px;
+  height: 53px;
 }
 
+.from-text input{
+  border: none !important;
+  outline: none !important;
+  background-color: transparent;
+}
+
+a{
+  text-decoration: none;
+}
 .from-input {
   position: relative;
   background-color: white;
@@ -224,6 +235,7 @@ p {
   outline: 1px solid green;
   width: 100%;
 }
+
 
 .fa-circle-xmark {
   position: absolute;
