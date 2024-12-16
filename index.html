@@ -34,11 +34,11 @@
                 <div class="nav-container">
                     <!-- first navbar -->
                     <nav class="navbar navbar-expand-lg navbar1 show">
-                        <div class="nav-all py-2">
+                        <div class="nav-all py-2 d-flex justify-content-between w-100">
                             <a class="navbar-brand text-light" href="#">WEGO</a>
                             <ul
                                 class="navbar-nav no-collapse-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-2 me-2 justify-content-between">
-                                <li class="nav-item dropdown link-first nav-round1">
+                                <li class="nav-item dropdown link-first nav-round1 en">
                                     <a class="nav-link dropdown-toggle text-light" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./images/flag.png" width="30px" alt="">
@@ -52,8 +52,8 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown link-first en">
-                                    <a class="nav-link dropdown-toggle text-light " href="#" role="button"
+                                <li class="nav-item dropdown link-first en ">
+                                    <a class="nav-link dropdown-toggle text-light" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         EN
                                     </a>
@@ -83,84 +83,109 @@
                                 </li>
                             </ul>
                             <form action="" class="d-flex gap-2">
-                                <button class="text-light btn rounded-5 link-first ">Login</button>
-                                <button class="btn text-light started rounded-5 btn-green link-first" type="submit">Get
-                                    Started</button>
+                                <button class="text-light btn rounded-5 link-first ">LOGIN</button>
+                                <button class="btn text-light started rounded-5 btn-green link-first" type="submit">GET
+                                    STARTED</button>
                             </form>
                         </div>
                     </nav>
                     <!-- second navbar -->
-                    <nav class=" navbar navbar-expand-lg navbar2 hidden fixed-top ">
+                    <nav class=" navbar navbar-expand-lg navbar2 hidden fixed-top">
                         <div class="nav-all py-2">
-                            <div class="navbar-more-links w-100 d-flex justify-content-between">
+                            <div class="navbar-more-links d-flex justify-content-between align-items-center">
                                 <!-- Additional links here -->
-                                <a class="navbar-brand " href="#">WEGO</a>
-                                <ul
-                                    class="navbar-nav second-nav m-auto fw-bold mb-2 mb-lg-0 d-flex align-items-center gap-2  justify-content-between">
-                                    <li class="nav-item flight-deco">
-                                        <a class="nav-link active text-success" aria-current="page" href="#">Flights</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Hotels</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Travel Blog</a>
-                                    </li>
+                                <div class="d-flex  justify-content-between ">
+                                    <a class="navbar-brand " href="#">WEGO</a>
+                                    <ul
+                                        class="navbar-nav second-nav fw-bold mb-2 mb-lg-0 d-flex align-items-center gap-2   s-nav1 ">
+                                        <li class="nav-item flight-deco">
+                                            <a class="nav-link active text-success" aria-current="page"
+                                                href="#">Flights</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Hotels</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link en2" href="#">WegoPro</a>
+                                        </li>
+                                        <li class="nav-item en2">
+                                            <a class="nav-link" href="#">Business Travel</a>
+                                        </li>
+                                        <li class="nav-item dropdown link-first2 nav-round2">
+                                            <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                More
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
 
-                                </ul>
-                                <ul
-                                    class="navbar-nav m-auto second-nav-link mb-2 mb-lg-0  align-items-center  me-2 justify-content-between">
-                                    <li class="nav-item dropdown link-first2 nav-round1">
-                                        <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="./images/flag.png" width="30px" alt="">
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item dropdown link-first2">
-                                        <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            EN
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <ul
+                                        class="navbar-nav second-nav-link mb-2 mb-lg-0 d-flex align-items-center  justify-content-between s-nav2">
+                                        <li class="nav-item dropdown link-first2 nav-round1">
+                                            <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./images/flag.png" width="30px" alt="">
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
 
-                                    <li class="nav-item dropdown link-first2 nav-round2">
-                                        <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            NGN
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form action="" class="d-flex gap-2 log-start">
-                                    <button class=" btn rounded-5 link-first2 link-first btn-grey">Login</button>
-                                    <button class="btn started rounded-5 btn-green link-first" type="submit">Get
-                                        Started</button>
-                                </form>
+                                        <li class="nav-item dropdown link-first2 en">
+                                            <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                EN
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown link-first2 nav-round2 en">
+                                            <a class="nav-link dropdown-toggle btn-grey" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                NGN
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                    <form action="" class="d-flex log-start gap-2">
+                                        <button
+                                            class="btn rounded-5 link-first2 link-first btn-grey second-nav-link d-flex align-items-center">LOGIN</button>
+                                        <button class="btn started rounded-5 btn-green link-first" type="submit">GET
+                                            STARTED</button>
+                                    </form>
+                                </div>
                             </div>
-
+                        </div>
                     </nav>
                 </div>
                 <div class="hero-change d-flex flex-column gap-5 justify-content-center align-items-center">
@@ -213,14 +238,14 @@
                         <div class="going d-flex col-lg-4 col-md-6 col-6">
                             <div class="from-text w-100">
                                 <label for="cityInput" class="label">From</label>
-                                <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold cityInput"
-                                    id="">
+                                <input type="text" value="Kaduna,Nigeria (KAD)" name=""
+                                    class="from-value fw-bold cityInput" id="">
                             </div>
                             <div class=" popup w-100 px-3 py-3 gap-2 cityPopup" id="">
                                 <div class="from-city w-100 ">
                                     <label for="" class="label">From</label>
-                                    <input type="text" value="Kaduna,Nigeria (KAD)" name=""
-                                        class="from-value fw-bold" id="">
+                                    <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                        id="">
                                     <i class="fa-solid fa-circle-xmark"></i>
                                 </div>
                                 <h6 class="fw-bold">Popular cities</h6>
@@ -247,8 +272,8 @@
                             <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                 <div class="from-city w-100 ">
                                     <label for="text" class="label">From</label>
-                                    <input type="text" value="Kaduna,Nigeria (KAD)" name=""
-                                        class="from-value fw-bold" id="text">
+                                    <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                        id="text">
                                     <i class="fa-solid fa-circle-xmark"></i>
                                 </div>
                                 <h6 class="fw-bold">Popular cities</h6>
@@ -272,7 +297,8 @@
                             <div class="from w-100 d-flex align-items-center">
                                 <div class="from-text w-100">
                                     <label for="text" class="label">Depart</label>
-                                    <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name="" id="text">
+                                    <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
+                                        id="text">
                                 </div>
                                 <div class="angle-time">
                                     <a href="" class="d-flex pe-4 gap-2">
