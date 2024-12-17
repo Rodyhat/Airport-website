@@ -361,7 +361,7 @@
                 <div class="round-way-return">
                     <div class="row form">
                         <div class="going d-flex gap-2 col-lg-6 col-md-12 ">
-                            <div class="from-text from ">
+                            <div class="from-text from w-100 d-flex flex-column">
                                 <label for="text">From</label>
                                 <input type="text" value="Kaduna, Nigeria (KAD)" name="" class="from-value fw-bold "
                                     id="text">
@@ -400,12 +400,12 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="from-text d-flex to">
+                            <div class="from-text d-flex w-100 to">
                                 <input type="text" value="To" name="" class="from-value" id="">
                             </div>
                         </div>
                         <div class="going d-flex gap-2 col-lg-6 col-md-12 ">
-                            <div class="from-text w-100 from">
+                            <div class="from-text w-100 from d-flex flex-column">
                                 <label for="text">Depart</label>
                                 <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name="" id="text">
                             </div>
@@ -503,7 +503,7 @@
                         <!-- one -->
                         <div class="multi-one d-flex flex-column">
                             <div class="row form align-items-center">
-                                <div class="going d-flex col-lg-4 col-md-6 col-6 ">
+                                <div class="going d-flex col-lg-4 col-md-4 col-4">
                                     <div class="from-text w-100 from d-flex flex-column">
                                         <label for="cityInput" class="label">From</label>
                                         <input type="text" value="Kaduna,Nigeria (KAD)" name=""
@@ -533,7 +533,7 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-6">
+                                <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
                                         <input type="text" value="To" name="" class="from-value cityInput to" id="">
                                     </div>
@@ -561,8 +561,8 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <div class="return d-flex col-lg-4 col-md-12 col-12">
-                                    <div class="from w-100 d-flex align-items-center">
+                                <div class="return d-flex col-lg-4 col-md-4 col-4">
+                                    <div class="from w-100 d-flex align-items-center from1">
                                         <div class="from-text w-100 d-flex flex-column">
                                             <label for="text" class="label">Depart</label>
                                             <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold"
@@ -580,37 +580,183 @@
                         </div>
                         <!-- two -->
                         <div class="multi-one d-flex flex-column">
-                            <div class="row form">
-                                <div class="going d-flex gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="w-100 from-text from">
-                                        <input type="text" value="From" name="" class="from-value1 py-3" id="">
+                            <div class="row form align-items-center">
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="from-text to">
+                                        <input type="text" value="From" name="" class="from-value cityInput to" id="">
                                     </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
-                                    <div class="w-100 from-text from">
-                                        <input type="text" value="To" name="" class="from-value1 py-3" id="">
+                                    <div class="from-text to">
+                                        <input type="text" value="To" name="" class="from-value cityInput to" id="">
                                     </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
                                 </div>
-                                <div class="return d-flex align-items-center gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center">
-                                        <div class="w-100 from-text">
-                                            <input type="text" value="Depart" name="" class="from-value " id="">
-                                        </div>
-                                        <div class="angle-time">
-                                            <a href="" class="d-flex pe-4 gap-2">
-                                                <i class="fa-solid fa-angle-left angle"></i>
-                                                <i class="fa-solid fa-angle-right angle"></i>
-                                            </a>
-                                        </div>
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="from-text to">
+                                        <input type="text" value="Depart" name="" class="from-value cityInput to" id="">
                                     </div>
-                                    <div class="cancel">
-                                        <i class="fa-solid fa-xmark text-light"></i>
-                                    </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                         <!-- three -->
                         <div class="multi-one d-flex flex-column">
+                            <div class="row form align-items-center">
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="from-text to">
+                                        <input type="text" value="From" name="" class="from-value cityInput to" id="">
+                                    </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="from-text to">
+                                        <input type="text" value="To" name="" class="from-value cityInput to" id="">
+                                    </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-4">
+                                    <div class="from-text to">
+                                        <input type="text" value="Depart" name="" class="from-value cityInput to" id="">
+                                    </div>
+                                    <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
+                                        <div class="from-city w-100 ">
+                                            <label for="text" class="label">From</label>
+                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
+                                                id="text">
+                                            <i class="fa-solid fa-circle-xmark"></i>
+                                        </div>
+                                        <h6 class="fw-bold">Popular cities</h6>
+                                        <div class="con">
+                                            <div class="country">Lagos</div>
+                                            <div class="country">Abuja</div>
+                                            <div class="country">Kano</div>
+                                            <div class="country">Port Harcourt</div>
+                                            <div class="country">Enugu</div>
+                                            <div class="country">Benin City</div>
+                                            <div class="country">Maiduguri</div>
+                                            <div class="country">Ibadan</div>
+                                            <div class="country">Kaduna</div>
+                                            <div class="country">Uyo</div>
+                                            <div class="country">Owerri</div>
+                                            <div class="country">Asaba</div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="multi-one d-flex flex-column">
                             <div class="row form">
                                 <div class="going d-flex gap-2 col-lg-4 col-md-4 col-4">
                                     <div class="w-100 from-text from">
@@ -639,7 +785,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="direct-flight row py-4">
                         <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
