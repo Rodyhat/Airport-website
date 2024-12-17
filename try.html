@@ -23,21 +23,49 @@
         rel="stylesheet">
 
     <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .from-text {
+            border: 1px solid #32cd32;
+            border-radius: 13px;
+            position: relative; /* Ensures popup is positioned relative to this container */
+        }
+
         .popup {
             display: none;
             position: absolute;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             top: 0;
-            z-index: 1000;
-            border-radius: 15px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border: 1px solid #ccc;
+            border-radius: 13px;
+            padding: 15px;
+            z-index: 1000; /* Makes sure the popup is above other content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .popup div {
-            margin: 5px 0;
+        .popup h6 {
+            margin-bottom: 10px;
+        }
+
+        .con {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .country {
             cursor: pointer;
+            padding: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .country:hover {
+            background-color: #f1f1f1;
         }
 
         #cityInput {
@@ -45,51 +73,29 @@
             outline: none !important;
             background-color: transparent;
         }
-
-        .con {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        .from {
-            border: 1px solid #32cd32;
-        }
-
-        .from1-text {
-            border: 1px solid #00000023;
-            border-radius: 13px;
-        }
     </style>
 </head>
 
 <body>
-    <!-- <label for="cityInput">From:</label>
-    <input type="text" id="cityInput" placeholder="Enter city" class="rounded-3"> -->
     <div class="from-text from1-text d-flex flex-column col-lg-3 col-md-3 col-3">
         <label for="cityInput" class="label">From</label>
         <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold " id="cityInput">
-    </div>
-    <div class="popup" id="cityPopup">
-        <div class="going from w-100 d-flex col-lg-12 col-md-12 col-12">
-            <div class="from-text  d-flex flex-column">
-                <label for="cityInput" class="label">From</label>
-                <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold cityInput" id="">
+        <div class="popup" id="cityPopup">
+            <h6 class="fw-bold">Popular cities</h6>
+            <div class="con">
+                <div class="country">Lagos</div>
+                <div class="country">Abuja</div>
+                <div class="country">Kano</div>
+                <div class="country">Port Harcourt</div>
+                <div class="country">Enugu</div>
+                <div class="country">Benin City</div>
+                <div class="country">Maiduguri</div>
+                <div class="country">Ibadan</div>
+                <div class="country">Kaduna</div>
+                <div class="country">Uyo</div>
+                <div class="country">Owerri</div>
+                <div class="country">Asaba</div>
             </div>
-        </div>
-        <h6 class="fw-bold">Popular cities</h6>
-        <div class="con">
-            <div class="country">Lagos</div>
-            <div class="country">Abuja</div>
-            <div class="country">Kano</div>
-            <div class="country">Port Harcourt</div>
-            <div class="country">Enugu</div>
-            <div class="country">Benin City</div>
-            <div class="country">Maiduguri</div>
-            <div class="country">Ibadan</div>
-            <div class="country">Kaduna</div>
-            <div class="country">Uyo</div>
-            <div class="country">Owerri</div>
-            <div class="country">Asaba</div>
         </div>
     </div>
 
@@ -99,9 +105,6 @@
 
         // Show popup when input is clicked
         input.addEventListener('click', () => {
-            const rect = input.getBoundingClientRect();
-            popup.style.top = `${rect.bottom + window.scrollY}px`;
-            popup.style.left = `${rect.left + window.scrollX}px`;
             popup.style.display = 'block';
         });
 
@@ -114,7 +117,7 @@
 
         // Add city name to input when a city is clicked
         popup.addEventListener('click', (e) => {
-            if (e.target.tagName === 'DIV') {
+            if (e.target.classList.contains('country')) {
                 input.value = e.target.textContent;
                 popup.style.display = 'none';
             }
