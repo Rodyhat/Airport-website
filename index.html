@@ -232,23 +232,25 @@
                     </div>
                     <button class="btn btn-outline-success add-flight">+ Add flight</button>
                 </div>
-                <!-- one way -->
+                <!-- new code for one way -->
                 <div class="one-way-depart">
-                    <div class="row form align-items-center">
-                        <div class="going d-flex col-lg-4 col-md-6 col-6 ">
-                            <div class="from-text w-100 from d-flex flex-column">
+                    <div class="row">
+                        <div class="going col-lg-4 col-md-6 col-6 from-div">
+                            <div class="div1 rounded-3 px-3 from">
                                 <label for="cityInput" class="label">From</label>
-                                <input type="text" value="Kaduna,Nigeria (KAD)" name=""
-                                    class="from-value fw-bold cityInput" id="">
+                                <input type="text" id="fromCityInput" value="Abuja, Nigeria (ABV)"
+                                    class="form-control2 fw-bold">
                             </div>
-                            <!-- <div class=" popup w-100 px-3 py-3 gap-2 cityPopup" id="">
-                                <div class="from-city w-100 ">
-                                    <label for="" class="label">From</label>
-                                    <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                        id="">
+                            <div class="popup fromPopUp" id="fromCityPopup">
+                                <div class="div2 py-2 px-3">
+                                    <label for="cityInput" class="label">From</label>
+                                    <input type="text" id="cityInput" value="Abuja, Nigeria (ABV)"
+                                        class="form-control2 rounded-3 fw-bold">
+                                </div>
+                                <div class="cancel" id="fromCancel">
                                     <i class="fa-solid fa-circle-xmark"></i>
                                 </div>
-                                <h6 class="fw-bold">Popular cities</h6>
+                                <h6 class="fw-bold">Popular Cities</h6>
                                 <div class="con">
                                     <div class="country">Lagos</div>
                                     <div class="country">Abuja</div>
@@ -263,35 +265,41 @@
                                     <div class="country">Owerri</div>
                                     <div class="country">Asaba</div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-6">
                             <div class="from-text to">
-                                <input type="text" value="To" name="" class="from-value cityInput to" id="">
+                                <input type="text" value="To" name="" class="from-value to" id="toCityInput">
                             </div>
-                            <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                <div class="from-city w-100 ">
-                                    <label for="text" class="label">From</label>
-                                    <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                        id="text">
+                            <div class="pop2" id="toCityPopup">
+                                <div class="from-text to div2">
+                                    <input type="text" value="To" name="" class="from-value to" id="tocityInput">
+                                </div>
+                                <div class="cancel2" id="toCancel">
                                     <i class="fa-solid fa-circle-xmark"></i>
+
                                 </div>
-                                <h6 class="fw-bold">Popular cities</h6>
+                                <h6 class="fw-bold">Popular Cities</h6>
                                 <div class="con">
-                                    <div class="country">Lagos</div>
-                                    <div class="country">Abuja</div>
-                                    <div class="country">Kano</div>
-                                    <div class="country">Port Harcourt</div>
-                                    <div class="country">Enugu</div>
-                                    <div class="country">Benin City</div>
-                                    <div class="country">Maiduguri</div>
-                                    <div class="country">Ibadan</div>
-                                    <div class="country">Kaduna</div>
-                                    <div class="country">Uyo</div>
-                                    <div class="country">Owerri</div>
-                                    <div class="country">Asaba</div>
+                                    <div class="country">Jeddah</div>
+                                    <div class="country">Cairo</div>
+                                    <div class="country">Dubai</div>
+                                    <div class="country"> London</div>
+                                    <div class="country">Kuwait</div>
+                                    <div class="country">Al Modinah</div>
+                                    <div class="country">Montreal</div>
+                                    <div class="country">Riyadh</div>
+                                    <div class="country">Doha</div>
+                                    <div class="country">Beirut</div>
+                                    <div class="country">Johannesburg</div>
+                                    <div class="country">Accra</div>
+                                    <div class="country">Mauritius</div>
+                                    <div class="country">Toronto</div>
+                                    <div class="country">Koror</div>
+                                    <div class="country">Minsk</div>
                                 </div>
-                            </div> -->
+                            </div>
+
                         </div>
                         <div class="return d-flex col-lg-4 col-md-12 col-12">
                             <div class="from w-100 d-flex align-items-center">
@@ -308,53 +316,53 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
-                            <div class="d-flight">
-                                <input type="checkbox" name="" id="flight-checkbox">
-                                <label for="flight-checkbox" class="direct-size">Direct flight only</label>
+                        <div class="direct-flight row py-4">
+                            <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                                <div class="d-flight">
+                                    <input type="checkbox" name="" id="flight-checkbox">
+                                    <label for="flight-checkbox" class="direct-size">Direct flight only</label>
+                                </div>
+                                <div class="adult-economy d-flex gap-5">
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            1 Adult
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Economy
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            2 Payment Types
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="adult-economy d-flex gap-5">
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        1 Adult
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Economy
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                                <div class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        2 Payment Types
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
+                                type="submit">
+                                Search
+                            </button>
                         </div>
-                        <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
-                            type="submit">
-                            Search
-                        </button>
                     </div>
                 </div>
                 <!-- round way -->

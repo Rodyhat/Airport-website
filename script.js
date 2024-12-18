@@ -97,3 +97,51 @@ multiCityLink.addEventListener("click", () => {
   roundWayReturn.style.display = "none";
   oneWayDepart.style.display = "none";
 });
+
+
+// from for one way flight pop1
+const input1 = document.getElementById("fromCityInput");
+const popup1 = document.getElementById("fromCityPopup");
+const cancel = document.getElementById("fromCancel");
+
+// Show popup when input is clicked
+input1.addEventListener("focus", () => {
+  popup1.style.display = "block";
+});
+
+// Hide popup when clicking the cancel icon
+cancel.addEventListener("click", () => {
+  popup1.style.display = "none";
+});
+
+// Add city name to input when a city is clicked
+popup1.addEventListener("click", (e) => {
+  if (e.target.classList.contains("country")) {
+    input1.value = e.target.textContent;
+    popup1.style.display = "none";
+  }
+});
+
+// from for one way flight pop1
+const input2 = document.getElementById("toCityInput");
+const popup2 = document.getElementById("toCityPopup");
+const cancel2 = document.getElementById("toCancel");
+
+// Show popup when input is clicked
+input2.addEventListener("focus", () => {
+  popup2.style.display = "block";
+});
+
+// Hide popup when clicking the cancel icon
+cancel2.addEventListener("click", () => {
+  popup2.style.display = "none";
+});
+
+// Add city name to input when a city is clicked
+popup2.addEventListener("click", (e) => {
+  if (e.target.classList.contains("country")) {
+    input2.value = e.target.textContent;
+    popup2.style.display = "none";
+  }
+});
+

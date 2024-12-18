@@ -297,7 +297,6 @@ a {
 .arrow img {
   display: none;
 }
-
 @media (max-width: 767px) {
   /* Styles for small screens */
   .s-nav1 {
@@ -338,16 +337,81 @@ a {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1061px) {
-  /* Styles for large screens */
+/* <style> */
+
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* 
-@media (max-width: 1024px) {
-  .en {
-    display: none;
-  }
-  .arrow img {
-    display: none;
-  }
-} */
+.pop2 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+ .country {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+  
+}
+
+ .country:hover {
+  background-color: #e7fddc;
+}
+
+.con {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.div2 {
+  border: 1px solid #00000023;
+  border-radius: 15px;
+  border: 1px solid #32cd32;
+}
+
+.div1 {
+  border: 1px solid #00000023;
+  border-radius: 15px;
+}
+
+.div1 input {
+  border: none;
+  outline: none;
+}
+
+#cityInput {
+  border: none;
+}
+
+h6 {
+  margin: 10px 0;
+}
+
+.form-control2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.label {
+  font-size: 13px;
+}
+/* </style> */
