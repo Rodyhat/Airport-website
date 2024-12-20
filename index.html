@@ -272,8 +272,9 @@
                                 <input type="text" value="To" name="" class="from-value to" id="toCityInput">
                             </div>
                             <div class="pop2" id="toCityPopup">
-                                <div class="from-text to div2">
-                                    <input type="text" value="To" name="" class="from-value to" id="tocityInput">
+                                <div class="div2 py-2 px-3">
+                                    <label for="cityInput" class="label">To</label>
+                                    <input type="text" id="cityInput" value="" class="form-control2 rounded-3 fw-bold">
                                 </div>
                                 <div class="cancel2" id="toCancel">
                                     <i class="fa-solid fa-circle-xmark"></i>
@@ -301,12 +302,46 @@
                             </div>
 
                         </div>
-                        <div class="return d-flex col-lg-4 col-md-12 col-12">
+                        <!-- <div class="return d-flex col-lg-4 col-md-12 col-12">
                             <div class="from w-100 d-flex align-items-center">
                                 <div class="from-text w-100 d-flex flex-column">
                                     <label for="text" class="label">Depart</label>
                                     <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
-                                        id="text">
+                                        id="text"readonly>
+                                </div>
+                                <div class="angle-time">
+                                    <a href="" class="d-flex pe-4 gap-2">
+                                        <i class="fa-solid fa-angle-left angle"></i>
+                                        <i class="fa-solid fa-angle-right angle"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="return d-flex col-lg-4 col-md-12 col-12">
+                            <div class="from w-100 d-flex align-items-center">
+                                <div class="from-text w-100 d-flex flex-column">
+                                    <label for="text" class="label">Depart</label>
+                                    <input type="depart" value="Fri,11 oct 2024" class="from-value fw-bold" name="" id="depart"
+                                        readonly>
+                                </div>
+                                <div class="calendar" id="calendar">
+                                    <div class="calendar-header">
+                                        <button id="prevMonth">&#8249;</button>
+                                        <h3 id="monthYear"></h3>
+                                        <button id="nextMonth">&#8250;</button>
+                                    </div>
+                                    <div class="calendar-body">
+                                        <div class="day-names">
+                                            <div>Mo</div>
+                                            <div>Tu</div>
+                                            <div>We</div>
+                                            <div>Th</div>
+                                            <div>Fr</div>
+                                            <div>Sa</div>
+                                            <div>Su</div>
+                                        </div>
+                                        <div class="days" id="days"></div>
+                                    </div>
                                 </div>
                                 <div class="angle-time">
                                     <a href="" class="d-flex pe-4 gap-2">

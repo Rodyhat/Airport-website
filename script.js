@@ -98,7 +98,6 @@ multiCityLink.addEventListener("click", () => {
   oneWayDepart.style.display = "none";
 });
 
-
 // from for one way flight pop1
 const input1 = document.getElementById("fromCityInput");
 const popup1 = document.getElementById("fromCityPopup");
@@ -145,3 +144,85 @@ popup2.addEventListener("click", (e) => {
   }
 });
 
+// depart form calender
+
+const daysElement = document.getElementById("days");
+const monthYearElement = document.getElementById("monthYear");
+const prevMonthButton = document.getElementById("prevMonth");
+const nextMonthButton = document.getElementById("nextMonth");
+const calendar = document.getElementById("calendar");
+const departInput = document.getElementById("depart");
+
+let currentDate = new Date();
+
+function renderCalendar() {
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth();
+
+  const firstDayOfMonth = new Date(year, month, 1);
+  const lastDayOfMonth = new Date(year, month + 1, 0);
+
+  const startDay =
+    firstDayOfMonth.getDay() === 0 ? 7 : firstDayOfMonth.getDay();
+  const daysInMonth = lastDayOfMonth.getDate();
+
+  monthYearElement.textContent = `${firstDayOfMonth.toLocaleString("default", {
+    month: "long",
+  })} ${year}`;
+
+  daysElement.innerHTML = "";
+
+  // Add blank days for previous month
+  for (let i = 1; i < startDay; i++) {
+    const blankDay = document.createElement("div");
+    blankDay.classList.add("day", "disabled");
+    daysElement.appendChild(blankDay);
+  }
+
+  // Add days of current month
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dayElement = document.createElement("div");
+    dayElement.classList.add("day");
+    dayElement.textContent = day;
+
+    if (
+      day === new Date().getDate() &&
+      month === new Date().getMonth() &&
+      year === new Date().getFullYear()
+    ) {
+      dayElement.classList.add("today");
+    }
+
+    dayElement.addEventListener("click", () => {
+      departInput.value = `${year},${String(month + 1).padStart(
+        2,
+        "0"
+      )}-${String(day).padStart(2, "0")}`;
+      closeCalendar();
+    });
+
+    daysElement.appendChild(dayElement);
+  }
+}
+
+function openCalendar() {
+  calendar.style.display = "block";
+}
+
+function closeCalendar() {
+  calendar.style.display = "none";
+}
+
+prevMonthButton.addEventListener("click", () => {
+  currentDate.setMonth(currentDate.getMonth() - 1);
+  renderCalendar();
+});
+
+nextMonthButton.addEventListener("click", () => {
+  currentDate.setMonth(currentDate.getMonth() + 1);
+  renderCalendar();
+});
+
+departInput.addEventListener("click", openCalendar);
+
+renderCalendar();
