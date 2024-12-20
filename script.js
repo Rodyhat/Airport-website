@@ -226,3 +226,6 @@ nextMonthButton.addEventListener("click", () => {
 departInput.addEventListener("click", openCalendar);
 
 renderCalendar();
+
+
+// stories

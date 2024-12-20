@@ -8,6 +8,7 @@
 body {
   font-family: "Inter", serif;
   font-weight: 400;
+  /* overflow-x: hidden; */
 }
 
 /* navbar */
@@ -17,9 +18,7 @@ body {
   transition: background-color 0.5s ease;
   /* add a smooth transition effect */
 }
-.nav-all {
-  padding: 0 32px;
-}
+
 .navbar.fixed {
   position: fixed;
   top: 0;
@@ -119,8 +118,8 @@ li {
 }
 
 /* second section */
-.second {
-  padding: 0 32px;
+.side-pad {
+  padding: 0 70px;
 }
 .flight-link a {
   text-decoration: none;
@@ -176,6 +175,10 @@ p {
   display: none;
 }
 
+.add-flight {
+  display: none;
+}
+
 .active2 {
   background-color: #e7fddc;
   color: green;
@@ -222,11 +225,11 @@ p {
   background-color: transparent;
 }
 
-.from:hover{
+.from:hover {
   border: 1px solid #00000053;
 }
 
-.to:hover{
+.to:hover {
   border: 1px solid #00000053;
 }
 
@@ -306,14 +309,14 @@ a {
   display: none;
 }
 
-.form-control2{
+.form-control2 {
   outline: none;
   border: none;
 }
 
 /* depart calender */
 
-.return{
+.return {
   position: relative;
 }
 .calendar {
@@ -390,6 +393,69 @@ a {
   pointer-events: none;
 }
 
+/* third section */
+.unlock-book img {
+  width: 100%;
+  border-radius: 15px;
+}
+.carousel-hide {
+  display: none;
+}
+
+/* forth section */
+.forth-img {
+  width: 110px;
+  height: 110px;
+}
+
+.benefit p {
+  font-size: 16px;
+}
+
+/* fifth section */
+.stories1 {
+  color: #44b50c;
+}
+.fa-greater-than {
+  color: #44b50c;
+  font-size: 12px;
+}
+
+/* sixth section , stories */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide .image1 {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.desc1 {
+  font-size: 15px;
+}
+
+.desc-btn {
+  font-size: 12px;
+}
 
 @media (max-width: 767px) {
   /* Styles for small screens */
@@ -405,8 +471,24 @@ a {
   .hero-change h1 {
     font-size: 22px;
   }
-  .nav-all {
-    padding: 0 16px;
+
+  .carousel-hide {
+    display: block;
+  }
+
+  .unlock-book {
+    display: none;
+  }
+
+  .third-sec-img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .travel-benefit {
+    flex-wrap: wrap;
+  }
+  .side-pad {
+    padding: 0 32px;
   }
 }
 
@@ -422,12 +504,18 @@ a {
   .s-nav1 {
     display: none !important;
   }
+  .side-pad {
+    padding: 0 32px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1023px) {
   /* Styles for medium screens */
   .en2 {
     display: none;
+  }
+  .side-pad {
+    padding: 0 32px;
   }
 }
 
@@ -457,15 +545,14 @@ a {
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
- .country {
+.country {
   padding: 5px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 13px;
-  
 }
 
- .country:hover {
+.country:hover {
   background-color: #e7fddc;
 }
 
