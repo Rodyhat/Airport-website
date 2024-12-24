@@ -200,7 +200,7 @@
             </div>
         </div>
     </div>
-    <!-- second section -->
+    <!-- second book flight section -->
     <div class=" side-pad">
         <div class="book-flight  d-flex flex-column">
             <div class="flight-link d-flex">
@@ -218,19 +218,19 @@
                 </a>
             </div>
             <div class="flight-trip bg-light px-4 pt-3 d-flex flex-column gap-4">
-                <div class="trip-city d-flex gap-3 justify-content-between py-2">
+                <div class="trip-city d-flex gap-3 justify-content-between">
                     <div class="add-ways d-flex align-items-center justify-content-center">
                         <div class="a-one">
-                            <h6 class="one-way ways one-way-link">One-way</h6>
+                            <h6 class="one-way ways one-way-link ways-text">One-way</h6>
                         </div>
                         <div class="">
-                            <h6 class="round-trip round-trip-link">Round-trip</h6>
+                            <h6 class="round-trip round-trip-link ways-text">Round-trip</h6>
                         </div>
                         <div class="multi-city-link">
-                            <h6 class="multi-city one-way">Multi-city</h6>
+                            <h6 class="multi-city one-way ways-text">Multi-city</h6>
                         </div>
                     </div>
-                    <button class="btn btn-outline-success add-flight">+ Add flight</button>
+                    <button class="btn btn-outline-success add-flight ways-text">+ Add flight</button>
                 </div>
                 <!-- new code for one way -->
                 <div class="one-way-depart">
@@ -238,8 +238,7 @@
                         <div class="going col-lg-4 col-md-6 col-6 from-div">
                             <div class="div1 rounded-3 px-3 from">
                                 <label for="cityInput" class="label">From</label>
-                                <input type="text" id="fromCityInput" value="Abuja, Nigeria (ABV)"
-                                    class="form-control2 fw-bold">
+                                <input type="text" id="fromCityInput" value="Abuja" class="form-control2 fw-bold">
                             </div>
                             <div class="popup fromPopUp" id="fromCityPopup">
                                 <div class="div2 py-2 px-3">
@@ -302,21 +301,6 @@
                             </div>
 
                         </div>
-                        <!-- <div class="return d-flex col-lg-4 col-md-12 col-12">
-                            <div class="from w-100 d-flex align-items-center">
-                                <div class="from-text w-100 d-flex flex-column">
-                                    <label for="text" class="label">Depart</label>
-                                    <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
-                                        id="text"readonly>
-                                </div>
-                                <div class="angle-time">
-                                    <a href="" class="d-flex pe-4 gap-2">
-                                        <i class="fa-solid fa-angle-left angle"></i>
-                                        <i class="fa-solid fa-angle-right angle"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> -->
                         <div class="return d-flex col-lg-4 col-md-12 col-12">
                             <div class="from w-100 d-flex align-items-center">
                                 <div class="from-text w-100 d-flex flex-column">
@@ -352,12 +336,12 @@
                             </div>
                         </div>
                         <div class="direct-flight row py-4">
-                            <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                            <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
                                 <div class="d-flight">
                                     <input type="checkbox" name="" id="flight-checkbox">
                                     <label for="flight-checkbox" class="direct-size">Direct flight only</label>
                                 </div>
-                                <div class="adult-economy d-flex gap-5">
+                                <div class="adult-economy ">
                                     <div class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -403,11 +387,10 @@
                 <!-- round trip -->
                 <div class="round-way-return">
                     <div class="row form">
-                        <div class="going d-flex gap-2 col-lg-6 col-md-12 ">
-                            <div class="from-text from w-100 d-flex flex-column">
-                                <label for="text">From</label>
-                                <input type="text" value="Kaduna, Nigeria (KAD)" name="" class="from-value fw-bold "
-                                    id="text">
+                        <div class="going d-flex gap-2 col-lg-6 col-md-12 col-12">
+                            <div class="from-text from d-flex flex-column col-6">
+                                <label for="text" class="label">From</label>
+                                <input type="text" value="Kaduna" name="" class="from-value fw-bold " id="text">
                             </div>
                             <!--  from pop up -->
                             <!-- <div class="from-input px-5 py-3">
@@ -443,13 +426,13 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="from-text d-flex w-100 to">
+                            <div class="from-text d-flex to to-width col-6">
                                 <input type="text" value="To" name="" class="from-value" id="">
                             </div>
                         </div>
-                        <div class="going d-flex gap-2 col-lg-6 col-md-12 ">
-                            <div class="from-text w-100 from d-flex flex-column">
-                                <label for="text">Depart</label>
+                        <div class="going d-flex gap-2 col-lg-6 col-md-12 col-12">
+                            <div class="from-text  from d-flex flex-column col-6">
+                                <label for="text" class="label">Depart</label>
                                 <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name="" id="text">
                             </div>
                             <!--  from pop up -->
@@ -486,18 +469,18 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="from-text d-flex w-100 to">
+                            <div class="from-text d-flex to to-width col-6">
                                 <input type="text" value="Return" name="" class="from-value" id="">
                             </div>
                         </div>
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                        <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
                             <div class="d-flight">
                                 <input type="checkbox" name="" id="flight-checkbox">
                                 <label for="flight-checkbox" class="direct-size">Direct flight only</label>
                             </div>
-                            <div class="adult-economy d-flex gap-5">
+                            <div class="adult-economy ">
                                 <div class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -531,7 +514,6 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
                         <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
@@ -547,10 +529,10 @@
                         <div class="multi-one d-flex flex-column">
                             <div class="row form align-items-center">
                                 <div class="going d-flex col-lg-4 col-md-4 col-4">
-                                    <div class="from-text w-100 from d-flex flex-column">
+                                    <div class="from-text w-100 from d-flex flex-column from-one">
                                         <label for="cityInput" class="label">From</label>
-                                        <input type="text" value="Kaduna,Nigeria (KAD)" name=""
-                                            class="from-value fw-bold cityInput" id="">
+                                        <input type="text" value="Kaduna" name="" class="from-value fw-bold cityInput"
+                                            id="">
                                     </div>
                                     <!-- <div class=" popup w-100 px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -578,7 +560,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="To" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="To" name="" class="from-value cityInput to from-one"
+                                            id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -605,7 +588,7 @@
                                     </div> -->
                                 </div>
                                 <div class="return d-flex col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center from1">
+                                    <div class="from w-100 d-flex align-items-center from1 from-one">
                                         <div class="from-text w-100 d-flex flex-column">
                                             <label for="text" class="label">Depart</label>
                                             <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold"
@@ -626,7 +609,8 @@
                             <div class="row form align-items-center">
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="From" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="From" name="" class="from-value cityInput to from-two"
+                                            id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -654,7 +638,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="To" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="To" name="" class="from-value cityInput to from-one"
+                                            id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -682,7 +667,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="Depart" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="Depart" name=""
+                                            class="from-value cityInput to from-two" id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -715,7 +701,8 @@
                             <div class="row form align-items-center">
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="From" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="From" name="" class="from-value cityInput to from-two"
+                                            id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -743,7 +730,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="To" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="To" name="" class="from-value cityInput to from-one"
+                                            id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -771,7 +759,8 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-4">
                                     <div class="from-text to">
-                                        <input type="text" value="Depart" name="" class="from-value cityInput to" id="">
+                                        <input type="text" value="Depart" name=""
+                                            class="from-value cityInput to from-two" id="">
                                     </div>
                                     <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
                                         <div class="from-city w-100 ">
@@ -831,12 +820,12 @@
                         </div> -->
                     </div>
                     <div class="direct-flight row py-4">
-                        <div class="check-flight col-lg-10 col-md-10 col-12 d-flex justify-content-between">
+                        <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
                             <div class="d-flight">
                                 <input type="checkbox" name="" id="flight-checkbox">
                                 <label for="flight-checkbox" class="direct-size">Direct flight only</label>
                             </div>
-                            <div class="adult-economy d-flex gap-5">
+                            <div class="adult-economy ">
                                 <div class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -870,7 +859,6 @@
                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
                         <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
@@ -883,7 +871,7 @@
             </div>
         </div>
     </div>
-    <!-- third section -->
+    <!-- third flight usefulness section -->
     <div class="wego-off  mt-5">
         <div class="side-pad d-flex row">
             <a href="" class="col-lg-4 col-md-4 col-12 unlock-book">
@@ -927,26 +915,26 @@
             </div>
         </div>
     </div>
-    <!-- forth section -->
+    <!-- forth  benefit section -->
     <div class="mt-5">
         <div class="side-pad d-flex travel-benefit mt-5">
             <div
-                class="benefit col-lg-3 col-md-3 col-6 d-flex flex-column justify-content-center  align-items-center flex-column">
+                class="benefit col-lg-3 col-md-3 col-12 d-flex flex-column justify-content-center  align-items-center flex-column">
                 <img src="./images/logo1.png" class="forth-img" alt="">
                 <h6 class="fw-bold">Top travel app in Nigeria</h6>
                 <p class="">Highly rated in App Store & Google Play</p>
             </div>
-            <div class="benefit col-lg-3 col-md-3 col-6 d-flex align-items-center flex-column">
+            <div class="benefit col-lg-3 col-md-3 col-12 d-flex align-items-center flex-column">
                 <img src="./images/logo3.png" class="forth-img" alt="">
                 <h6 class="fw-bold"> Shop with confidence</h6>
                 <p>No hidden fees, taxes or other nasty surprises</p>
             </div>
-            <div class=" benefit col-lg-3 col-md-3 col-6 d-flex align-items-center flex-column">
+            <div class=" benefit col-lg-3 col-md-3 col-12 d-flex align-items-center flex-column">
                 <img src="./images/logo4.png" class="forth-img" alt="">
                 <h6 class="fw-bold">Pay the way you want</h6>
                 <p>See only sellers who support your preferred methods</p>
             </div>
-            <div class="benefit col-lg-3 col-md-3 col-6 d-flex align-items-center flex-column">
+            <div class="benefit col-lg-3 col-md-3 col-12 d-flex align-items-center flex-column">
                 <img src="./images/logo13.png" class="forth-img" alt="">
                 <h6 class="fw-bold">Instant booking</h6>
                 <p>For selected sellers, book with just a couple of clicks</p>
@@ -954,7 +942,7 @@
 
         </div>
     </div>
-    <!-- fifth section -->
+    <!-- fifth stories section -->
     <div class="stories mt-5 hide-small-stories">
         <div class="story1 d-flex justify-content-between side-pad">
             <h4 class="fw-bold">Stories</h4>
@@ -1675,81 +1663,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/8-Kite-Surf-480x360.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/8-Kite-Surf-480x360.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </swiper-slide>
                 <swiper-slide class="side-pad">
                     <div class="col-6">
@@ -1782,97 +1695,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/8-Kite-Surf-480x360.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                   
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </swiper-slide>
                 <swiper-slide class="side-pad">
                     <div class="col-6">
@@ -1905,141 +1727,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/8-Kite-Surf-480x360.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </swiper-slide>
                 <swiper-slide class="side-pad">
                     <div class="col-6">
@@ -2102,7 +1789,7 @@
                             </div>
                         </div>
                     </div> -->
-                   
+
                     <!-- <div class="col-6">
                         <div class="card" style="width: 98%; height: 22rem;">
                             <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
@@ -2226,7 +1913,6 @@
 
                 </swiper-slide>
                 <swiper-slide class="side-pad">
-                   
                     <div class="col-6">
                         <div class="card" style="width: 98%; height: 22rem;">
                             <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
@@ -2256,222 +1942,69 @@
                                 </a>
                             </div>
                         </div>
-                    </div> 
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                   
-                    <!-- <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 98%; height: 22rem;">
-                            <img src="https://blog.wego.com/wp-content/uploads/winter-paralympics-2026-featured-480x320.webp"
-                                class="card-img-top card-image" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
-                                    Destinations, and Itinerary.</p>
-                                <a href="#" class="d-flex gap-2 ps-3">
-                                    <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
-                                        alt="" class="image1">
-                                    <p class="desc-btn">Wego Travel Blog</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </swiper-slide>
             </swiper-container>
         </div>
     </div>
-    <!-- sixth section -->
+    <!-- sixth popular and cheap trip section -->
     <div class="side-pad airlines mt-5">
-        <div class="popular-airlines d-flex">
-            <h4 class="col-lg-4 col-md-4 col-12">Popular Airlines in Nigeria</h4>
-            <div class="col-lg-2 col-md-2 col-12">
+        <div class="popular-airlines row">
+            <h4 class="col-lg-4 col-md-4 col-12 fw-bold">Popular Airlines in Nigeria</h4>
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241220/flights/airlines_rectangular/P4.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/MS.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/TK.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/ET.png"
                     alt="" class="airline-img">
             </div>
         </div>
         <div class="cheap-flight row mt-2">
-            <p class="col-lg-4 col-md-4 col-12 cheap-text">Book cheap flights on your favourite airlines</p>
-
-            <div class="col-lg-2 col-md-2 col-12">
+            <p class="col-lg-4 col-md-4 col-12 cheap-text ">Book cheap flights on your favourite airlines</p>
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/KQ.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/QR.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/KP.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20241223/flights/airlines_rectangular/AW.png"
                     alt="" class="airline-img">
             </div>
         </div>
     </div>
-    <!-- seventh section -->
+    <!-- seventh  partnership section -->
     <div class="side-pad airlines mt-5">
-        <div class="popular-airlines d-flex">
-            <h4 class="col-lg-4 col-md-4 col-12">Our Travels Partners</h4>
-            <div class="col-lg-2 col-md-2 col-12">
+        <div class="popular-airlines row">
+            <h4 class="col-lg-4 col-md-4 col-12 fw-bold">Our Travels Partners</h4>
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/mytrip.com.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/travelwings.com.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/city.travel.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/onetravel.com.png"
                     alt="" class="airline-img">
             </div>
@@ -2480,24 +2013,167 @@
             <p class="col-lg-4 col-md-4 col-12 cheap-text">Wego searches for the best deals on these sites in Nigeria
             </p>
 
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/lucky2go.com.png"
                     alt="" class="airline-img">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/rehlat.com.png"
                     alt="" width="60px">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/kiwi.com.png"
                     alt="" width="70px" class="">
             </div>
-            <div class="col-lg-2 col-md-2 col-12">
+            <div class="col-lg-2 col-md-2 col-3">
                 <img src="https://assets.wego.com/image/upload/h_64,c_fit,f_auto,fl_lossy,q_auto:low/v20220803/providers/rectangular_logos/ucuzabilet.com.png"
                     alt="" class="airline-img">
             </div>
         </div>
     </div>
+    <!-- eighth trip ideas section -->
+    <div class="side-pad mt-5">
+        <h4 class="fw-bold">Trip Ideas from Nigeria</h4>
+        <div class="add-ways d-flex gap-3">
+            <div class="a-one">
+                <h6 class="round-trip ways one-way-link ways-text">Beach</h6>
+            </div>
+            <div class="">
+                <h6 class="one-way round-trip-link ways-text">Family-friendly</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Nature</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Backpacking</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Romantic</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Cultural</h6>
+            </div>
+        </div>
+        <div class="beach mt-2 row">
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h6>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h6>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h5>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="side-pad mt-5">
+        <h4 class="fw-bold">Trip Ideas from Nigeria</h4>
+        <div class="add-ways d-flex gap-3">
+            <div class="a-one">
+                <h6 class="round-trip ways one-way-link ways-text">Beach</h6>
+            </div>
+            <div class="">
+                <h6 class="one-way round-trip-link ways-text">Family-friendly</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Nature</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Backpacking</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Romantic</h6>
+            </div>
+            <div class="multi-city-link">
+                <h6 class="multi-city one-way ways-text">Cultural</h6>
+            </div>
+        </div>
+        <div class="beach mt-2 row">
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h6>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h6>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="beirut rounded-3 d-flex col-lg-4 col-md-4 col-12">
+                <div class="beirut-image">
+                    <img src="https://zen.wego.com/cdn-cgi/image/height=296/destinations/cities/BEY.jpg" alt="">
+                </div>
+                <div class="beirut-details">
+                    <div class="beirut-name">
+                        <h6>Beirut</h5>
+                        <p>Lebanon</p>
+                    </div>
+                    <div class="beirut-price">
+                        <p>Round-trip from</p>
+                        <h5>904,947 ₦</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>

@@ -290,6 +290,11 @@ a {
 .angle {
   color: #188920;
 }
+
+.adult-economy {
+  display: flex;
+  justify-content: space-between;
+}
 /* button */
 .btn-green:hover {
   background-color: green !important;
@@ -441,38 +446,36 @@ swiper-slide .image1 {
   height: 15px;
   object-fit: cover;
 }
-.hide-stories{
+.hide-stories {
   display: none;
 }
 
 /* sixth section */
-.airline-img{
+.airline-img {
   width: 100px;
 }
-.cheap-text{
+.cheap-text {
   font-size: 16px;
 }
 
+/* Navigation button styles */
+.swiper-button-next svg,
+.swiper-button-prev {
+  color: red;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 
- /* Navigation button styles */
- .swiper-button-next svg,
- .swiper-button-prev {
-   color: red;
-   font-size: 20px;
-   background: rgba(0, 0, 0, 0.5);
-   border-radius: 50%;
-   width: 40px;
-   height: 40px;
- }
-
- .swiper-button-next:hover,
- .swiper-button-prev:hover {
-   background: rgba(0, 0, 0, 0.8);
- }
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 .card-body a {
   text-decoration: none;
   color: black;
-
 }
 
 .desc1 {
@@ -483,77 +486,9 @@ swiper-slide .image1 {
 .desc-btn {
   font-size: 12px;
 }
-.card-image{
+.card-image {
   width: 100%;
   height: 220px;
-}
-
-@media (max-width: 767px) {
-  /* Styles for small screens */
-  .s-nav1 {
-    display: none !important;
-  }
-  .s-nav2 {
-    display: none !important;
-  }
-  .en {
-    display: none !important;
-  }
-  .hero-change h1 {
-    font-size: 22px;
-  }
-
-  .carousel-hide {
-    display: block;
-  }
-
-  .unlock-book {
-    display: none;
-  }
-
-  .third-sec-img {
-    width: 100%;
-    border-radius: 15px;
-  }
-  .travel-benefit {
-    flex-wrap: wrap;
-  }
-  .side-pad {
-    padding: 0 32px;
-  }
-  .hide-small-stories{
-    display: none;
-  }
-  .hide-stories{
-    display: block;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Styles for medium screens */
-  .en {
-    display: none;
-  }
-  .en2 {
-    display: none;
-  }
-
-  .s-nav1 {
-    display: none !important;
-  }
-  .side-pad {
-    padding: 0 32px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1023px) {
-  /* Styles for medium screens */
-  .en2 {
-    display: none;
-  }
-  .side-pad {
-    padding: 0 32px;
-  }
 }
 
 /* <style> */
@@ -607,6 +542,7 @@ swiper-slide .image1 {
 .div1 {
   border: 1px solid #00000023;
   border-radius: 15px;
+  position: relative;
 }
 
 .div1 input {
@@ -619,7 +555,7 @@ swiper-slide .image1 {
 }
 
 h6 {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .form-control2 {
@@ -633,3 +569,146 @@ h6 {
   font-size: 13px;
 }
 /* </style> */
+.one-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* trip ideas */
+.beirut{
+  color: black;
+  /* height: 148px; */
+  /* position: relative; */
+  box-shadow: 0 0 8px 2px rgba(0,0,0,.1);
+}
+
+.beirut-image img{
+  width: 60%;
+  /* position: absolute; */
+}
+
+@media (max-width: 767px) {
+  /* Styles for small screens */
+  .s-nav1 {
+    display: none !important;
+  }
+  .s-nav2 {
+    display: none !important;
+  }
+  .en {
+    display: none !important;
+  }
+  .hero-change h1 {
+    font-size: 22px;
+  }
+
+  .carousel-hide {
+    display: block;
+  }
+
+  .unlock-book {
+    display: none;
+  }
+
+  .third-sec-img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .travel-benefit {
+    flex-wrap: wrap;
+  }
+  .side-pad {
+    padding: 0 32px;
+  }
+  .hide-small-stories {
+    display: none;
+  }
+  .hide-stories {
+    display: block;
+  }
+  .desc1 {
+    font-size: 11px;
+  }
+
+  .ways-text {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+  .one-check {
+    flex-direction: column;
+  }
+  .direct-size {
+    font-size: 13px;
+  }
+  .adult-economy {
+    font-size: 16px;
+  }
+  #flight-checkbox {
+    width: 11px;
+    height: 11px;
+  }
+  .nav-item a {
+    font-size: 13px;
+  }
+  .to-width {
+    width: 50%;
+  }
+  .from-one {
+    padding-left: 7px;
+  }
+  .from-two {
+    padding-left: 0px;
+  }
+  .angle-time {
+    display: none;
+  }
+  .from-text input {
+   font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for medium screens */
+  .en {
+    display: none;
+  }
+  .en2 {
+    display: none;
+  }
+
+  .s-nav1 {
+    display: none !important;
+  }
+  .side-pad {
+    padding: 0 32px;
+  }
+  .to-width {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  /* Styles for medium screens */
+  .en2 {
+    display: none;
+  }
+  .side-pad {
+    padding: 0 32px;
+  }
+  .to-width {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1061px) {
+  .to-width {
+    width: 50%;
+  }
+  .side-pad {
+    padding: 0 50px;
+  }
+}
