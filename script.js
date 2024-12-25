@@ -39,12 +39,10 @@ window.addEventListener("scroll", () => {
 
 // flight way
 
-function resetActiveState() {
+function resetActiveState1() {
   oneWay.classList.remove("active2");
   multiCity.classList.remove("active2");
   roundTrip.classList.remove("active2");
-
-  // oneWay.classList.remove("one-way");
 }
 
 let oneWay = document.querySelector(".one-way");
@@ -63,7 +61,7 @@ let addFlight = document.querySelector(".add-flight");
 
 // one way
 oneWayLink.addEventListener("click", () => {
-  resetActiveState();
+  resetActiveState1();
   oneWay.classList.add("active2");
   roundTrip.classList.remove("round-trip");
   roundTrip.classList.add("one-way");
@@ -91,6 +89,8 @@ multiCityLink.addEventListener("click", () => {
   multiCity.classList.add("active2");
   oneWay.classList.remove("active2");
   roundTrip.classList.remove("active2");
+  roundTrip.classList.remove("round-trip");
+  roundTrip.classList.add("one-way");
 
   multiCityDepart.style.display = "block";
   addFlight.style.display = "block";
@@ -227,5 +227,150 @@ departInput.addEventListener("click", openCalendar);
 
 renderCalendar();
 
+// trip ideas
 
-// stories
+function resetActiveState2() {
+  beachy.classList.remove(".active3");
+  family.classList.remove("active3");
+  naturer.classList.remove("active3");
+  packing.classList.remove("active3");
+  romantist.classList.remove("active3");
+  culture.classList.remove("active3");
+}
+
+let beachy = document.querySelector(".beach-link");
+let family = document.querySelector(".family");
+let naturer = document.querySelector(".naturer");
+let packing = document.querySelector(".packing");
+let romantist = document.querySelector(".romantist");
+let culture = document.querySelector(".culture");
+
+let beachLink = document.querySelector(".beach-link");
+let familyFriendlyLink = document.querySelector(".family-friendly-link");
+let natureLink = document.querySelector(".nature-link");
+let backPackingLink = document.querySelector(".backpacking-link");
+let romanticLink = document.querySelector(".romantic-link");
+let culturalLink = document.querySelector(".cultural-link");
+
+let beach = document.querySelector(".beach");
+let familyFriendly = document.querySelector(".family-friendly");
+let nature = document.querySelector(".nature");
+let backPacking = document.querySelector(".backpacking");
+let romantic = document.querySelector(".romantic");
+let cultural = document.querySelector(".cultural");
+
+
+// beach 
+beachLink.addEventListener("click" , () =>{
+  beachy.classList.add(".active3");
+  family.classList.remove("active3");
+  naturer.classList.remove("active3");
+  packing.classList.remove("active3");
+  romantist.classList.remove("active3");
+  culture.classList.remove("active3");
+  beachy.classList.add("beach-link");
+  beachy.classList.remove("family-friendly-link");
+
+  beach.style.display = "block";
+  familyFriendly.style.display = "none";
+  nature.style.display = "none";
+  backPacking.style.display = "none";
+  romantic.style.display = "none";
+  cultural.style.display = "none";
+} )
+
+// family friendly
+familyFriendlyLink.addEventListener("click" , () =>{
+  resetActiveState2();
+  beachy.classList.remove(".active3");
+  family.classList.add("active3");
+  naturer.classList.remove("active3");
+  packing.classList.remove("active3");
+  romantist.classList.remove("active3");
+  culture.classList.remove("active3");
+  beachy.classList.remove("beach-link");
+  beachy.classList.add("family-friendly-link");
+
+  beach.style.display = "none";
+  familyFriendly.style.display = "block";
+  nature.style.display = "none";
+  backPacking.style.display = "none";
+  romantic.style.display = "none";
+  cultural.style.display = "none";
+} )
+
+// nature 
+natureLink.addEventListener("click" , () =>{
+  beachy.classList.remove(".active3");
+  family.classList.remove("active3");
+  naturer.classList.add("active3");
+  packing.classList.remove("active3");
+  romantist.classList.remove("active3");
+  culture.classList.remove("active3");
+  beachy.classList.remove("beach-link");
+  beachy.classList.add("family-friendly-link");
+
+  beach.style.display = "none";
+  familyFriendly.style.display = "none";
+  nature.style.display = "block";
+  backPacking.style.display = "none";
+  romantic.style.display = "none";
+  cultural.style.display = "none";
+} )
+
+// backpacking 
+backPackingLink.addEventListener("click" , () =>{
+  beachy.classList.remove(".active3");
+  family.classList.remove("active3");
+  naturer.classList.remove("active3");
+  packing.classList.add("active3");
+  romantist.classList.remove("active3");
+  culture.classList.remove("active3");
+  beachy.classList.remove("beach-link");
+  beachy.classList.add("family-friendly-link");
+
+  beach.style.display = "none";
+  familyFriendly.style.display = "none";
+  nature.style.display = "none";
+  backPacking.style.display = "block";
+  romantic.style.display = "none";
+  cultural.style.display = "none";
+} )
+
+// romantic 
+romanticLink.addEventListener("click" , () =>{
+  beachy.classList.remove(".active3");
+  family.classList.remove("active3");
+  naturer.classList.remove("active3");
+  packing.classList.remove("active3");
+  romantist.classList.add("active3");
+  culture.classList.remove("active3");
+  beachy.classList.remove("beach-link");
+  beachy.classList.add("family-friendly-link");
+
+  beach.style.display = "none";
+  familyFriendly.style.display = "none";
+  nature.style.display = "none";
+  backPacking.style.display = "none";
+  romantic.style.display = "block";
+  cultural.style.display = "none";
+} )
+
+// cultural 
+culturalLink.addEventListener("click" , () =>{
+  beachy.classList.remove(".active3");
+  family.classList.remove("active3");
+  naturer.classList.remove("active3");
+  packing.classList.remove("active3");
+  romantist.classList.remove("active3");
+  culture.classList.add("active3");
+  beachy.classList.remove("beach-link");
+  beachy.classList.add("family-friendly-link");
+
+  beach.style.display = "none";
+  familyFriendly.style.display = "none";
+  nature.style.display = "none";
+  backPacking.style.display = "none";
+  romantic.style.display = "none";
+  cultural.style.display = "block";
+} )

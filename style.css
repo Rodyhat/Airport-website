@@ -452,7 +452,7 @@ swiper-slide .image1 {
 
 /* sixth section */
 .airline-img {
-  width: 100px;
+  width: 70px;
 }
 .cheap-text {
   font-size: 16px;
@@ -575,16 +575,74 @@ h6 {
 }
 
 /* trip ideas */
-.beirut{
+.add-ways1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.beirut {
   color: black;
-  /* height: 148px; */
-  /* position: relative; */
-  box-shadow: 0 0 8px 2px rgba(0,0,0,.1);
+  width: 348px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+.beirut-image {
+  width: 195px;
+  height: 100%;
 }
 
-.beirut-image img{
+.beirut-image img {
   width: 100%;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.leb {
+  font-size: 12px;
+  color: #767676;
+}
+
+.beirut-price span {
+  font-size: 13px;
+  color: #767676;
+}
+.beach-link {
+  background-color: #e7fddc;
+  color: green;
+  padding: 9px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.family-friendly-link, .nature-link , .backpacking-link , .romantic-link , .cultural-link {
+  background-color: rgba(193, 180, 180, 0.27);
+  padding: 9px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.family-friendly {
+  display: none;
+}
+
+.nature {
+  display: none;
+}
+
+.backpacking {
+  display: none;
+}
+
+.romantic {
+  display: none;
+}
+
+.cultural {
+  display: none;
+}
+
+.active3 {
+  background-color: #e7fddc;
+  color: green;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -618,7 +676,7 @@ h6 {
     flex-wrap: wrap;
   }
   .side-pad {
-    padding: 0 32px;
+    padding: 0 12px;
   }
   .hide-small-stories {
     display: none;
@@ -667,7 +725,7 @@ h6 {
     display: none;
   }
   .from-text input {
-   font-size: 13px;
+    font-size: 13px;
   }
 }
 
