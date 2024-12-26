@@ -612,7 +612,11 @@ h6 {
   cursor: pointer;
 }
 
-.family-friendly-link, .nature-link , .backpacking-link , .romantic-link , .cultural-link {
+.family-friendly-link,
+.nature-link,
+.backpacking-link,
+.romantic-link,
+.cultural-link {
   background-color: rgba(193, 180, 180, 0.27);
   padding: 9px;
   border-radius: 18px;
@@ -643,6 +647,32 @@ h6 {
   background-color: #e7fddc;
   color: green;
   cursor: pointer;
+}
+
+/* nineth features available */
+.wego-bg-image {
+  background-image: url(https://zen.wego.com/cdn-cgi/image/width=536/web/illustrations/download-app-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.wego-bg-image img {
+  width: 55%;
+}
+.unlocking{
+  background-color: #fafafa;
+  padding: 48px;
+}
+.fa-check{
+  color: white;
+}
+.enjoy-check {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #44b50c;
 }
 
 @media (max-width: 767px) {
