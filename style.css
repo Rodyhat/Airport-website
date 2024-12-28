@@ -681,7 +681,29 @@ h6 {
   color: white;
   font-size: 13px;
 }
+.scanning{
+  height: 140px;
+}
 
+.scan-image img{
+  height: 140px;
+}
+
+.get-scan{
+  background-color: black;
+}
+.get-scan a{
+  text-decoration: none;
+  color: white;
+}
+
+.getit{
+  font-size: 8px;
+}
+.g-store{
+  font-size: 13px;
+  margin: 0;
+}
 @media (max-width: 767px) {
   /* Styles for small screens */
   .s-nav1 {
