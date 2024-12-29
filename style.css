@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", serif;
   font-weight: 400;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* navbar */
@@ -685,6 +685,9 @@ h6 {
   height: 140px;
 }
 
+.fa-apple{
+  font-size: 25px;
+}
 .scan-image img{
   height: 140px;
 }
@@ -704,6 +707,22 @@ h6 {
   font-size: 13px;
   margin: 0;
 }
+
+/* tenth section */
+
+.top-cities div{
+  padding: 5px 0;
+}
+.top-cities a{
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.top-cities a:hover{
+  text-decoration:underline;
+}
+
 @media (max-width: 767px) {
   /* Styles for small screens */
   .s-nav1 {
