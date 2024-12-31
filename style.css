@@ -26,6 +26,10 @@ body {
   width: 100%;
 }
 
+.navbar-brand img {
+  width: 70px;
+}
+
 .hidden {
   display: none;
 }
@@ -33,7 +37,7 @@ li {
   list-style-type: none;
 }
 .nav-item a {
-  font-size: 15px;
+  font-size: 13px;
 }
 .second-nav-link {
   border: 1px solid #00000027;
@@ -63,7 +67,7 @@ li {
 
 .link-first {
   background-color: rgba(24, 3, 3, 0.285);
-  font-size: 15px;
+  font-size: 13px;
 }
 .link-first2 {
   background-color: transparent;
@@ -341,7 +345,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  /* background: #4caf50; */
   color: black;
 }
 
@@ -579,6 +582,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
 }
+
 .beirut {
   color: black;
   width: 348px;
@@ -656,15 +660,15 @@ h6 {
   background-size: cover;
   display: flex;
   justify-content: center;
-  /* height: 50%; */
 }
 
 .wego-bg-image img {
   width: 45%;
 }
+
 .unlocking {
   background-color: #fafafa;
-  padding: 40px 40px 0 40px;
+  padding: 40px 40px 20px 40px;
 }
 
 .enjoy-check {
@@ -681,46 +685,81 @@ h6 {
   color: white;
   font-size: 13px;
 }
-.scanning{
+.scanning {
   height: 140px;
 }
 
-.fa-apple{
+.fa-apple {
   font-size: 25px;
 }
-.scan-image img{
+.scan-image img {
   height: 140px;
 }
 
-.get-scan{
+.get-scan {
   background-color: black;
 }
-.get-scan a{
+.get-scan a {
   text-decoration: none;
   color: white;
 }
 
-.getit{
+.getit {
   font-size: 8px;
 }
-.g-store{
+.g-store {
   font-size: 13px;
   margin: 0;
 }
 
 /* tenth section */
 
-.top-cities div{
+.top-cities div {
   padding: 5px 0;
 }
-.top-cities a{
+.top-cities a {
   color: #1d1d1d;
   text-decoration: none;
   font-size: 16px;
 }
 
-.top-cities a:hover{
-  text-decoration:underline;
+.top-cities a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1d1d1d;
+}
+
+footer h6 {
+  color: white;
+}
+footer a {
+  color: white;
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pro {
+  background-color: #ff8000;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 0.475rem;
+}
+hr {
+  background-color: white;
+  height: 2px;
+}
+
+.copyright {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -754,7 +793,7 @@ h6 {
     flex-wrap: wrap;
   }
   .side-pad {
-    padding: 0 12px;
+    padding: 0 20px;
   }
   .hide-small-stories {
     display: none;
@@ -804,6 +843,19 @@ h6 {
   }
   .from-text input {
     font-size: 13px;
+  }
+
+  .unlocking {
+    background-color: #fafafa;
+    padding: 40px 40px 0 15px;
+  }
+
+  .idea-flex {
+    gap: 20px;
+  }
+
+  .footer {
+    gap: 25px;
   }
 }
 
