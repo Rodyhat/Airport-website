@@ -8,9 +8,12 @@
 body {
   font-family: "Inter", serif;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
+.all {
+  width: 100%;
+  overflow-x: hidden;
+}
 /* navbar */
 .navbar {
   position: relative;
@@ -136,6 +139,7 @@ li {
 .h-anchor {
   border-top-right-radius: 15px;
 }
+
 
 p {
   margin: 0;
