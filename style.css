@@ -109,6 +109,9 @@ li {
   transition: 1s ease-in-out;
 }
 
+.fa-hotel {
+  color: #32cd32;
+}
 .hero-image h1 {
   font-size: 45px;
 }
@@ -139,7 +142,6 @@ li {
 .h-anchor {
   border-top-right-radius: 15px;
 }
-
 
 p {
   margin: 0;
