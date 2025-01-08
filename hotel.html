@@ -206,7 +206,11 @@
                     <a href="./index.html" style="background-color: #403715;" class="text-light  px-4 py-2  f-anchor">
                         <div class="flight d-flex justify-content-center pt-3 gap-1">
                             <!-- <img src="./images/aero-img1.png" width="25px" height="25px" alt=""> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m397-115-99-184-184-99 71-70 145 25 102-102-317-135 84-86 385 68 124-124q23-23 57-23t57 23q23 23 23 56.5T822-709L697-584l68 384-85 85-136-317-102 102 26 144-71 71Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#e8eaed">
+                                <path
+                                    d="m397-115-99-184-184-99 71-70 145 25 102-102-317-135 84-86 385 68 124-124q23-23 57-23t57 23q23 23 23 56.5T822-709L697-584l68 384-85 85-136-317-102 102 26 144-71 71Z" />
+                            </svg>
                             <p class="fs-6">Flights</p>
                         </div>
                     </a>
@@ -218,27 +222,15 @@
                     </a>
                 </div>
                 <div class="flight-trip bg-light text-dark px-4 pt-3 d-flex flex-column gap-4">
-                    <div class="trip-city d-flex gap-3 justify-content-between">
-                        <div class="add-ways d-flex align-items-center justify-content-center">
-                            <div class="a-one">
-                                <h6 class="one-way ways one-way-link ways-text">One-way</h6>
-                            </div>
-                            <div class="">
-                                <h6 class="round-trip round-trip-link ways-text">Round-trip</h6>
-                            </div>
-                            <div class="">
-                                <h6 class="multi-city one-way ways-text multi-city-link">Multi-city</h6>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-success add-flight ways-text">+ Add flight</button>
-                    </div>
+                    <span>Where do you want to stay?</span>
                     <!-- new code for one way -->
-                    <div class="one-way-depart">
+                    <div class="destination">
                         <div class="row">
-                            <div class="going col-lg-4 col-md-6 col-6 from-div">
+                            <div class="going col-lg-5 col-md-6 col-6 from-div">
                                 <div class="div1 rounded-3 px-3 from">
-                                    <label for="cityInput" class="label">From</label>
-                                    <input type="text" id="fromCityInput" value="Abuja" class="form-control2 fw-bold">
+                                    <label for="cityInput" class="label">Destination</label>
+                                    <input type="text" id="fromCityInput" value="Lagos, Nigeria"
+                                        class="form-control2 fw-bold">
                                 </div>
                                 <div class="popup fromPopUp" id="fromCityPopup">
                                     <div class="div2 py-2 px-3">
@@ -266,9 +258,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-6">
-                                <div class="from-text to">
-                                    <input type="text" value="To" name="" class="from-value to" id="toCityInput">
+                            <div class="col-lg-5 col-md-6 col-6 d-flex">
+                                <div class="col-lg-6 div1 rounded-3 px-3 from">
+                                    <label for="cityInput" class="label">Check In</label>
+                                    <input type="text" id="fromCityInput" value="Lagos, Nigeria"
+                                        class="form-control2 fw-bold">
+                                </div>
+                                <div class=" col-lg-6 div1 rounded-3 px-3 from">
+                                    <label for="cityInput" class="label">Check Out</label>
+                                    <input type="text" id="fromCityInput" value="Lagos, Nigeria"
+                                        class="form-control2 fw-bold">
                                 </div>
                                 <div class="pop2" id="toCityPopup">
                                     <div class="div2 py-2 px-3">
@@ -302,10 +301,10 @@
                                 </div>
 
                             </div>
-                            <div class="return d-flex col-lg-4 col-md-12 col-12">
+                            <div class="return d-flex col-lg-2 col-md-12 col-12">
                                 <div class="from w-100 d-flex align-items-center">
                                     <div class="from-text w-100 d-flex flex-column">
-                                        <label for="text" class="label">Depart</label>
+                                        <label for="text" class="label">Guest & Rooms</label>
                                         <input type="depart" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
                                             id="depart" readonly>
                                     </div>
@@ -329,10 +328,7 @@
                                         </div>
                                     </div>
                                     <div class="angle-time">
-                                        <a href="" class="d-flex pe-4 gap-2">
-                                            <i class="fa-solid fa-angle-left angle"></i>
-                                            <i class="fa-solid fa-angle-right angle"></i>
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -340,42 +336,7 @@
                                 <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
                                     <div class="d-flight">
                                         <input type="checkbox" name="" id="flight-checkbox">
-                                        <label for="flight-checkbox" class="direct-size">Direct flight only</label>
-                                    </div>
-                                    <div class="adult-economy ">
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                1 Adult
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Economy
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                2 Payment Types
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
+                                        <label for="flight-checkbox" class="direct-size">Free cancellation</label>
                                     </div>
                                 </div>
                                 <button
@@ -386,496 +347,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- round trip -->
-                    <div class="round-way-return">
-                        <div class="row form">
-                            <div class="going d-flex gap-2 col-lg-6 col-md-12 col-12">
-                                <div class="from-text from d-flex flex-column col-6">
-                                    <label for="text" class="label">From</label>
-                                    <input type="text" value="Kaduna" name="" class="from-value fw-bold " id="text">
-                                </div>
-                                <!--  from pop up -->
-                                <!-- <div class="from-input px-5 py-3">
-                                <div class="lag-input">
-                                    <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
-                                    <i class="fa-solid fa-circle-xmark"></i>
-                                </div>
-                                <h6>Popular cities</h6>
-                                <div class="from-location d-flex">
-                                    <div class="locat-1">
-                                        <p>Lagos</p>
-                                        <p>Enugu</p>
-                                        <p>Maiduguri</p>
-                                        <p>Ibadan</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Abuja</p>
-                                        <p>Benin City</p>
-                                        <p>Owerri</p>
-                                        <p>Uyo</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Kano</p>
-                                        <p>Asaba</p>
-                                        <p>Kaduna</p>
-                                        <p>Jos</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Port-Harcourt</p>
-                                        <p>Ilorin</p>
-                                        <p>Sokoto</p>
-                                        <p>Yola</p>
-                                    </div>
-                                </div>
-                            </div> -->
-                                <div class="from-text d-flex to to-width col-6">
-                                    <input type="text" value="To" name="" class="from-value" id="">
-                                </div>
-                            </div>
-                            <div class="going d-flex gap-2 col-lg-6 col-md-12 col-12">
-                                <div class="from-text  from d-flex flex-column col-6">
-                                    <label for="text" class="label">Depart</label>
-                                    <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold" name=""
-                                        id="text">
-                                </div>
-                                <!--  from pop up -->
-                                <!-- <div class="from-input w-100 px-5 py-3">
-                                <div class="lag-input">
-                                    <input type="text" name="" class="ps-2" value="Lagos, Nigeria (LOS)" id="">
-                                    <i class="fa-solid fa-circle-xmark"></i>
-                                </div>
-                                <h6>Popular cities</h6>
-                                <div class="from-location d-flex">
-                                    <div class="locat-1">
-                                        <p>Lagos</p>
-                                        <p>Enugu</p>
-                                        <p>Maiduguri</p>
-                                        <p>Ibadan</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Abuja</p>
-                                        <p>Benin City</p>
-                                        <p>Owerri</p>
-                                        <p>Uyo</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Kano</p>
-                                        <p>Asaba</p>
-                                        <p>Kaduna</p>
-                                        <p>Jos</p>
-                                    </div>
-                                    <div class="locat-1">
-                                        <p>Port-Harcourt</p>
-                                        <p>Ilorin</p>
-                                        <p>Sokoto</p>
-                                        <p>Yola</p>
-                                    </div>
-                                </div>
-                            </div> -->
-                                <div class="from-text d-flex to to-width col-6">
-                                    <input type="text" value="Return" name="" class="from-value" id="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="direct-flight row py-4">
-                            <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
-                                <div class="d-flight">
-                                    <input type="checkbox" name="" id="flight-checkbox">
-                                    <label for="flight-checkbox" class="direct-size">Direct flight only</label>
-                                </div>
-                                <div class="adult-economy ">
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            1 Adult
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Economy
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            2 Payment Types
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
-                                type="submit">
-                                Search
-                            </button>
-                        </div>
-                    </div>
-                    <!-- multi-city -->
-                    <div class="multi-city-depart">
-                        <div class="cities-multi d-flex flex-column gap-3">
-                            <!-- one -->
-                            <div class="multi-one d-flex flex-column">
-                                <div class="row form align-items-center">
-                                    <div class="going d-flex col-lg-4 col-md-4 col-4">
-                                        <div class="from-text w-100 from d-flex flex-column from-one">
-                                            <label for="cityInput" class="label">From</label>
-                                            <input type="text" value="Kaduna" name=""
-                                                class="from-value fw-bold cityInput" id="">
-                                        </div>
-                                        <!-- <div class=" popup w-100 px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="To" name=""
-                                                class="from-value cityInput to from-one" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="return d-flex col-lg-4 col-md-4 col-4">
-                                        <div class="from w-100 d-flex align-items-center from1 from-one">
-                                            <div class="from-text w-100 d-flex flex-column">
-                                                <label for="text" class="label">Depart</label>
-                                                <input type="text" value="Fri,11 oct 2024" class="from-value fw-bold"
-                                                    name="" id="text">
-                                            </div>
-                                            <div class="angle-time">
-                                                <a href="" class="d-flex pe-4 gap-2">
-                                                    <i class="fa-solid fa-angle-left angle"></i>
-                                                    <i class="fa-solid fa-angle-right angle"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- two -->
-                            <div class="multi-one d-flex flex-column">
-                                <div class="row form align-items-center">
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="From" name=""
-                                                class="from-value cityInput to from-two" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="To" name=""
-                                                class="from-value cityInput to from-one" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="Depart" name=""
-                                                class="from-value cityInput to from-two" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- three -->
-                            <div class="multi-one d-flex flex-column">
-                                <div class="row form align-items-center">
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="From" name=""
-                                                class="from-value cityInput to from-two" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="To" name=""
-                                                class="from-value cityInput to from-one" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-4">
-                                        <div class="from-text to">
-                                            <input type="text" value="Depart" name=""
-                                                class="from-value cityInput to from-two" id="">
-                                        </div>
-                                        <!-- <div class="popup px-3 py-3 gap-2 cityPopup" id="">
-                                        <div class="from-city w-100 ">
-                                            <label for="text" class="label">From</label>
-                                            <input type="text" value="Kaduna,Nigeria (KAD)" name="" class="from-value fw-bold"
-                                                id="text">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                        <h6 class="fw-bold">Popular cities</h6>
-                                        <div class="con">
-                                            <div class="country">Lagos</div>
-                                            <div class="country">Abuja</div>
-                                            <div class="country">Kano</div>
-                                            <div class="country">Port Harcourt</div>
-                                            <div class="country">Enugu</div>
-                                            <div class="country">Benin City</div>
-                                            <div class="country">Maiduguri</div>
-                                            <div class="country">Ibadan</div>
-                                            <div class="country">Kaduna</div>
-                                            <div class="country">Uyo</div>
-                                            <div class="country">Owerri</div>
-                                            <div class="country">Asaba</div>
-                                        </div>
-                                    </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- <div class="multi-one d-flex flex-column">
-                            <div class="row form">
-                                <div class="going d-flex gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="w-100 from-text from">
-                                        <input type="text" value="From" name="" class="from-value1 py-3" id="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-4">
-                                    <div class="w-100 from-text from">
-                                        <input type="text" value="To" name="" class="from-value1 py-3" id="">
-                                    </div>
-                                </div>
-                                <div class="return d-flex align-items-center gap-2 col-lg-4 col-md-4 col-4">
-                                    <div class="from w-100 d-flex align-items-center">
-                                        <div class="w-100 from-text">
-                                            <input type="text" value="Depart" name="" class="from-value " id="">
-                                        </div>
-                                        <div class="angle-time">
-                                            <a href="" class="d-flex pe-4 gap-2">
-                                                <i class="fa-solid fa-angle-left angle"></i>
-                                                <i class="fa-solid fa-angle-right angle"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cancel">
-                                        <i class="fa-solid fa-xmark text-light"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        </div>
-                        <div class="direct-flight row py-4">
-                            <div class="check-flight col-lg-10 col-md-10 col-12  one-check">
-                                <div class="d-flight">
-                                    <input type="checkbox" name="" id="flight-checkbox">
-                                    <label for="flight-checkbox" class="direct-size">Direct flight only</label>
-                                </div>
-                                <div class="adult-economy ">
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            1 Adult
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Economy
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            2 Payment Types
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn text-light fw-bold started rounded-5 btn-green col-lg-2 col-md-2 col-12 "
-                                type="submit">
-                                Search
-                            </button>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
         <!-- third flight usefulness section -->
-        <div class="wego-off  mt-5">
+        <div class="wego-off mt-5">
             <div class="side-pad d-flex row">
                 <a href="" class="col-lg-4 col-md-4 col-12 unlock-book">
                     <div class=" slide-show">
@@ -957,7 +433,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-italy-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/hmpv-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -972,7 +448,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/ireland-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/germany-launches-global-digital-visa-system-for-national-visas-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -987,7 +463,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 ">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/hawaii-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/united-airline-student-discount-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1004,7 +480,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/ireland-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/germany-launches-global-digital-visa-system-for-national-visas-featured-480x320.webp"
                                     class="card-img-top card-image " alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1019,7 +495,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/hawaii-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/united-airline-student-discount-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1034,7 +510,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-australia-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/eta-uk-temp-480x300.jpg"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1051,7 +527,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/hawaii-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/united-airline-student-discount-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1098,7 +574,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-australia-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/eta-uk-temp-480x300.jpg"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1145,7 +621,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/8-Kite-Surf-480x360.jpg"
+                                <img src="https://blog.wego.com/wp-content/uploads/The-Ritz-Carlton-Rabat-Dar-Es-Salam2-480x271.jpeg"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1192,7 +668,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-usa-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/ryanair-uk-student-discount-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1239,7 +715,7 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/new-zealand-solo-travel-featured-480x320.webp"
+                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-new-york-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
@@ -1286,7 +762,103 @@
                     <swiper-slide class="side-pad">
                         <div class="col-lg-4 col-md-4">
                             <div class="card" style="width: 98%; height: 22rem;">
-                                <img src="https://blog.wego.com/wp-content/uploads/111225-480x320.jpg"
+                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-italy-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/winter-paralympics-2026-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </swiper-slide>
+                    <swiper-slide class="side-pad">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/ireland-solo-travel-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/romania-bulgaria-joined-schengen-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/winter-paralympics-2026-featured-480x320.webp"
+                                    class="card-img-top card-image" alt="...">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
+                                        Destinations, and Itinerary.</p>
+                                    <a href="#" class="d-flex gap-2 ps-3">
+                                        <img src="https://assets.wego.com/image/upload/c_fit,w_48,h_48,q_auto,f_auto,fl_lossy/v1456382855/wego_logos/wego-icon.png"
+                                            alt="" class="image1">
+                                        <p class="desc-btn">Wego Travel Blog</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </swiper-slide>
+                    <swiper-slide class="side-pad">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card" style="width: 98%; height: 22rem;">
+                                <img src="https://blog.wego.com/wp-content/uploads/solo-travel-costa-rica-featured-480x320.webp"
                                     class="card-img-top card-image" alt="...">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <p class="card-text desc1">Your Ultimate Guide to Solo Travel in Italy: Tips,
