@@ -768,6 +768,47 @@ hr {
   color: white;
 }
 
+/* hotel page */
+.fa-star {
+  color: #ff9800;
+  font-size: 12px;
+}
+
+.rev {
+  background-color: #7cb342;
+  color: white;
+  padding: 0 8px;
+  font-size: 12px;
+  border-radius: 9px;
+}
+
+.rev-num {
+  color: #767676;
+  font-size: 12px;
+}
+
+.rates {
+  color: #44b50c;
+}
+
+.card-lagos {
+  padding: 16px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+}
+
+.card-text{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-lagos-image{
+  width: 100%;
+  height: 180px;
+}
+
 @media (max-width: 767px) {
   /* Styles for small screens */
   .s-nav1 {
