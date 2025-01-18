@@ -259,9 +259,8 @@ let backPacking = document.querySelector(".backpacking");
 let romantic = document.querySelector(".romantic");
 let cultural = document.querySelector(".cultural");
 
-
-// beach 
-beachLink.addEventListener("click" , () =>{
+// beach
+beachLink.addEventListener("click", () => {
   beachy.classList.add(".active3");
   family.classList.remove("active3");
   naturer.classList.remove("active3");
@@ -277,10 +276,10 @@ beachLink.addEventListener("click" , () =>{
   backPacking.style.display = "none";
   romantic.style.display = "none";
   cultural.style.display = "none";
-} )
+});
 
 // family friendly
-familyFriendlyLink.addEventListener("click" , () =>{
+familyFriendlyLink.addEventListener("click", () => {
   resetActiveState2();
   beachy.classList.remove(".active3");
   family.classList.add("active3");
@@ -297,10 +296,10 @@ familyFriendlyLink.addEventListener("click" , () =>{
   backPacking.style.display = "none";
   romantic.style.display = "none";
   cultural.style.display = "none";
-} )
+});
 
-// nature 
-natureLink.addEventListener("click" , () =>{
+// nature
+natureLink.addEventListener("click", () => {
   beachy.classList.remove(".active3");
   family.classList.remove("active3");
   naturer.classList.add("active3");
@@ -316,10 +315,10 @@ natureLink.addEventListener("click" , () =>{
   backPacking.style.display = "none";
   romantic.style.display = "none";
   cultural.style.display = "none";
-} )
+});
 
-// backpacking 
-backPackingLink.addEventListener("click" , () =>{
+// backpacking
+backPackingLink.addEventListener("click", () => {
   beachy.classList.remove(".active3");
   family.classList.remove("active3");
   naturer.classList.remove("active3");
@@ -335,10 +334,10 @@ backPackingLink.addEventListener("click" , () =>{
   backPacking.style.display = "block";
   romantic.style.display = "none";
   cultural.style.display = "none";
-} )
+});
 
-// romantic 
-romanticLink.addEventListener("click" , () =>{
+// romantic
+romanticLink.addEventListener("click", () => {
   beachy.classList.remove(".active3");
   family.classList.remove("active3");
   naturer.classList.remove("active3");
@@ -354,10 +353,10 @@ romanticLink.addEventListener("click" , () =>{
   backPacking.style.display = "none";
   romantic.style.display = "block";
   cultural.style.display = "none";
-} )
+});
 
-// cultural 
-culturalLink.addEventListener("click" , () =>{
+// cultural
+culturalLink.addEventListener("click", () => {
   beachy.classList.remove(".active3");
   family.classList.remove("active3");
   naturer.classList.remove("active3");
@@ -373,4 +372,12 @@ culturalLink.addEventListener("click" , () =>{
   backPacking.style.display = "none";
   romantic.style.display = "none";
   cultural.style.display = "block";
-} )
+});
+
+// initiallize swiper
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -435,25 +435,59 @@ a {
   font-size: 12px;
 }
 
-swiper-container {
+/* swiper-container {
+  width: 100%;
+  height: 100%;
+} */
+
+.swiper {
   width: 100%;
   height: 100%;
 }
-
-swiper-slide {
+.swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-swiper-slide .image1 {
+.swiper-slide .image1 {
   display: block;
   width: 15px;
   height: 15px;
   object-fit: cover;
+}
+
+.swiper-button-next {
+  width: 22px;
+  height: 22px;
+  font-size: 2px;
+  border-radius: 50%;
+  background-color: white;
+  color: #44b50c;
+  right: 1px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.513);
+}
+.swiper-button-prev {
+  width: 22px !important;
+  height: 22px !important;
+  font-size: 2px;
+  border-radius: 50%;
+  left: -5px !important;
+  background-color: white !important;
+  color: #44b50c !important;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.513);
+}
+
+/* Optional: Adjust the background or padding */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-color: transparent;
+  font-size: 14px; /* Adjust icon size for the arrow */
+}
+.swiper-button-next:hover{
+  background-color: white !important;
 }
 .hide-stories {
   display: none;
@@ -467,7 +501,7 @@ swiper-slide .image1 {
   font-size: 16px;
 }
 
-/* Navigation button styles */
+/* Navigation button styles
 .swiper-button-next svg,
 .swiper-button-prev {
   color: red;
@@ -481,7 +515,7 @@ swiper-slide .image1 {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background: rgba(0, 0, 0, 0.8);
-}
+} */
 .card-body a {
   text-decoration: none;
   color: black;
@@ -795,16 +829,16 @@ hr {
   padding: 16px 16px 12px;
   display: flex;
   flex-direction: column;
-  align-items:start;
+  align-items: start;
 }
 
-.card-text{
+.card-text {
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-.card-lagos-image{
+.card-lagos-image {
   width: 100%;
   height: 180px;
 }
