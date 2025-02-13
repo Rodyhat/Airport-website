@@ -501,21 +501,6 @@ a {
   font-size: 16px;
 }
 
-/* Navigation button styles
-.swiper-button-next svg,
-.swiper-button-prev {
-  color: red;
-  font-size: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: rgba(0, 0, 0, 0.8);
-} */
 .card-body a {
   text-decoration: none;
   color: black;
@@ -819,6 +804,8 @@ hr {
 .rev-num {
   color: #767676;
   font-size: 12px;
+  display: flex;
+  align-items: start;
 }
 
 .rates {
@@ -826,9 +813,7 @@ hr {
 }
 
 .card-lagos {
-  padding: 16px 16px 12px;
-  display: flex;
-  flex-direction: column;
+  /* padding: 16px 16px 12px; */
   align-items: start;
 }
 
@@ -843,6 +828,9 @@ hr {
   height: 180px;
 }
 
+.photel-med-hid{
+  display:none;
+}
 @media (max-width: 767px) {
   /* Styles for small screens */
   .s-nav1 {
@@ -970,6 +958,9 @@ hr {
   }
   .to-width {
     width: 50%;
+  }
+  .photel-med-hid{
+    display: block;
   }
 }
 
